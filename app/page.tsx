@@ -86,7 +86,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-3 gap-8 items-center">
             <div className="lg:col-span-1">
               <Image
-                src="/images/pills.png"
+                src="https://thumbs.dreamstime.com/b/bottle-pills-18402018.jpg"
                 alt="Mental health medication"
                 width={500}
                 height={500}
@@ -272,7 +272,7 @@ export default function HomePage() {
             <div className="bg-gray-100 p-6 rounded-lg">
               <div className="h-48 mb-4 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="https://www.digitalpharmacist.com/wp-content/uploads/2020/09/dreamstime_l_135110090.jpg"
                   alt="Person using smartphone"
                   width={300}
                   height={200}
@@ -291,7 +291,7 @@ export default function HomePage() {
             <div className="bg-gray-100 p-6 rounded-lg">
               <div className="h-48 mb-4 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="https://www.shelterfirstresponder.com/wp-content/uploads/2020/03/coronavirus-field-hospital.jpg"
                   alt="Healthcare professional"
                   width={300}
                   height={200}
@@ -310,7 +310,7 @@ export default function HomePage() {
             <div className="bg-gray-100 p-6 rounded-lg">
               <div className="h-48 mb-4 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="https://www.hayatmed.com/wp-content/uploads/2023/06/Cost-of-butt-implant-surgery.jpg"
                   alt="Doctor with patient"
                   width={300}
                   height={200}
@@ -329,7 +329,7 @@ export default function HomePage() {
             <div className="bg-gray-100 p-6 rounded-lg">
               <div className="h-48 mb-4 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="https://www.shutterstock.com/image-photo/doctor-patient-600nw-524000074.jpg"
                   alt="Doctor with patient"
                   width={300}
                   height={200}
@@ -364,7 +364,7 @@ export default function HomePage() {
               </p>
               <div className="h-48 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="https://holhealthstudio.s3.amazonaws.com/app/uploads/2019/06/algos.jpeg"
                   alt="Work-life balance"
                   width={300}
                   height={200}
@@ -383,7 +383,7 @@ export default function HomePage() {
               </p>
               <div className="h-48 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="https://wallpaperaccess.com/full/624111.jpg"
                   alt="Innovation"
                   width={300}
                   height={200}
@@ -402,7 +402,7 @@ export default function HomePage() {
               </p>
               <div className="h-48 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="https://blackdoctor.org/wp-content/uploads/2022/12/doctor-patient-612x350.jpg"
                   alt="Impactful work"
                   width={300}
                   height={200}
