@@ -16,20 +16,20 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-8">
+          <Link href="/new-page" className="text-white hover:text-blue-100 transition-colors">
+            New Page
+          </Link>
           <Link href="/" className="text-white hover:text-blue-100 transition-colors">
             Home
           </Link>
-          <Link href="/about-us" className="text-white hover:text-blue-100 transition-colors">
-            About Us
-          </Link>
-          <Link href="/services" className="text-white hover:text-blue-100 transition-colors">
-            Services
-          </Link>
-          <Link href="/psychology" className="text-white hover:text-blue-100 transition-colors">
-            Psychology
+          <Link href="/offer" className="text-white hover:text-blue-100 transition-colors">
+            Offer
           </Link>
           <Link href="/book-appointment" className="text-white hover:text-blue-100 transition-colors">
-            Book Appointment
+            Book Consultation
+          </Link>
+          <Link href="/about-us" className="text-white hover:text-blue-100 transition-colors">
+            About us
           </Link>
           <Link href="/contact" className="text-white hover:text-blue-100 transition-colors">
             Contact
@@ -61,20 +61,20 @@ export default function Header() {
       {isMenuOpen && (
         <nav className="lg:hidden mt-4 pb-4 border-t border-blue-300/30">
           <div className="flex flex-col space-y-3 pt-4">
+            <Link href="/new-page" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
+              New Page
+            </Link>
             <Link href="/" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
               Home
             </Link>
-            <Link href="/about-us" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
-              About Us
-            </Link>
-            <Link href="/services" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
-              Services
-            </Link>
-             <Link href="/psychology" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
-              Psychology
+            <Link href="/offer" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
+              Offer
             </Link>
             <Link href="/book-appointment" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
-              Book Appointment
+              Book Consultation
+            </Link>
+            <Link href="/about-us" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
+              About us
             </Link>
             <Link href="/contact" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
               Contact
