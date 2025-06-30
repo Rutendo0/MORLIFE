@@ -1,4 +1,3 @@
-
 "use client"
 
 import Link from "next/link"
@@ -25,6 +24,9 @@ export default function Header() {
           </Link>
           <Link href="/services" className="text-white hover:text-blue-100 transition-colors">
             Services
+          </Link>
+          <Link href="/psychology" className="text-white hover:text-blue-100 transition-colors">
+            Psychology
           </Link>
           <Link href="/book-appointment" className="text-white hover:text-blue-100 transition-colors">
             Book Appointment
@@ -67,6 +69,9 @@ export default function Header() {
             </Link>
             <Link href="/services" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
               Services
+            </Link>
+             <Link href="/psychology" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
+              Psychology
             </Link>
             <Link href="/book-appointment" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
               Book Appointment
