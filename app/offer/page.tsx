@@ -51,10 +51,10 @@ export default function OfferPage() {
                     health screenings, vaccinations, and lifestyle counseling.
                   </p>
                   <Link
-                    href="/book-appointment"
+                    href="/offer/general-practitioner"
                     className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors inline-block"
                   >
-                    Book Consultation
+                    Learn More
                   </Link>
                 </div>
 
