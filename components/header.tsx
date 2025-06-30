@@ -22,9 +22,25 @@ export default function Header() {
           <Link href="/" className="text-white hover:text-blue-100 transition-colors">
             Home
           </Link>
-          <Link href="/offer" className="text-white hover:text-blue-100 transition-colors">
-            Offer
-          </Link>
+          <div className="relative group">
+            <Link href="/offer" className="text-white hover:text-blue-100 transition-colors">
+              Offer
+            </Link>
+            <div className="absolute top-full left-0 mt-2 w-64 bg-blue-600 text-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <Link 
+                href="/offer/general-practitioner" 
+                className="block px-6 py-4 hover:bg-blue-700 transition-colors first:rounded-t-lg"
+              >
+                General practitioner
+              </Link>
+              <Link 
+                href="/offer/psychology" 
+                className="block px-6 py-4 hover:bg-blue-700 transition-colors last:rounded-b-lg"
+              >
+                Psychological services
+              </Link>
+            </div>
+          </div>
           <Link href="/book-appointment" className="text-white hover:text-blue-100 transition-colors">
             Book Consultation
           </Link>
