@@ -149,7 +149,8 @@ export default function HomePage() {
                 alt="How to book a consultation"
                 width={600}
                 height={600}
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto rounded-lg shadow-lg"
+                style={{ width: 'auto', height: 'auto' }}
               />
             </div>
 
@@ -160,31 +161,40 @@ export default function HomePage() {
               <p className="text-xl text-blue-600 mb-8">FOLLOW THESE EASY STEPS!</p>
 
               <div className="space-y-6">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center font-bold shadow-lg">
                     1
                   </div>
-                  <p>
-                    If you are using a computer scroll to the top of the screen and choose the "Book Appointment" tab, where you will find a "Book Now" button, please click the "Book Now" button.
-                  </p>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-blue-600 mb-2">Navigate to Booking</h4>
+                    <p className="text-gray-700">
+                      Scroll to the top of the screen and choose the "Book Appointment" tab, where you will find a "Book Now" button.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center font-bold shadow-lg">
                     2
                   </div>
-                  <p>
-                    You'll be directed to our booking page where you can choose your desired service and preferred date/time.
-                  </p>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-blue-600 mb-2">Select Service & Time</h4>
+                    <p className="text-gray-700">
+                      Choose your desired service and preferred date/time from our available slots.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center font-bold shadow-lg">
                     3
                   </div>
-                  <p>
-                    Once you've selected your appointment slot, follow the prompts to provide your details (If you would like the doctor to contact you via whatsapp or direct call).
-                  </p>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-blue-600 mb-2">Provide Contact Details</h4>
+                    <p className="text-gray-700">
+                      Follow the prompts to provide your details and choose your preferred contact method (WhatsApp or phone call).
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -202,7 +212,8 @@ export default function HomePage() {
                 alt="Medical equipment shipping containers"
                 width={600}
                 height={400}
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto rounded-lg shadow-lg"
+                style={{ width: 'auto', height: 'auto' }}
               />
             </div>
 
@@ -237,7 +248,8 @@ export default function HomePage() {
                 alt="Doctor consulting with patient"
                 width={600}
                 height={400}
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto rounded-lg shadow-lg"
+                style={{ width: 'auto', height: 'auto' }}
               />
             </div>
 
@@ -245,7 +257,7 @@ export default function HomePage() {
               <h3 className="text-2xl sm:text-3xl text-blue-600 mb-8">REACH OUT TO US</h3>
               <Link
                 href="/book-appointment"
-                className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-700 transition-colors inline-block"
+                className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-700 transition-all duration-300 inline-block shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Book a consultation
               </Link>
@@ -261,7 +273,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Card 1 */}
-            <div className="bg-white p-6 rounded-lg text-center">
+            <div className="bg-white p-6 rounded-lg text-center shadow-lg hover:shadow-xl transition-shadow">
               <div className="h-48 mb-4 overflow-hidden rounded-lg">
                 <Image
                   src="https://www.digitalpharmacist.com/wp-content/uploads/2020/09/dreamstime_l_135110090.jpg"
@@ -269,6 +281,7 @@ export default function HomePage() {
                   width={300}
                   height={200}
                   className="w-full h-full object-cover"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
               </div>
               <h3 className="text-xl text-blue-600 mb-4">CONVENIENCE AND ACCESSIBILITY</h3>
@@ -280,7 +293,7 @@ export default function HomePage() {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white p-6 rounded-lg text-center">
+            <div className="bg-white p-6 rounded-lg text-center shadow-lg hover:shadow-xl transition-shadow">
               <div className="h-48 mb-4 overflow-hidden rounded-lg">
                 <Image
                   src="https://www.shelterfirstresponder.com/wp-content/uploads/2020/03/coronavirus-field-hospital.jpg"
@@ -288,6 +301,7 @@ export default function HomePage() {
                   width={300}
                   height={200}
                   className="w-full h-full object-cover"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
               </div>
               <h3 className="text-xl text-blue-600 mb-4">QUALITY CARE</h3>
@@ -299,7 +313,7 @@ export default function HomePage() {
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white p-6 rounded-lg text-center">
+            <div className="bg-white p-6 rounded-lg text-center shadow-lg hover:shadow-xl transition-shadow">
               <div className="h-48 mb-4 overflow-hidden rounded-lg">
                 <Image
                   src="https://www.hayatmed.com/wp-content/uploads/2023/06/Cost-of-butt-implant-surgery.jpg"
@@ -307,6 +321,7 @@ export default function HomePage() {
                   width={300}
                   height={200}
                   className="w-full h-full object-cover"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
               </div>
               <h3 className="text-xl text-blue-600 mb-4">AFFORDABLE PRICING</h3>
@@ -319,7 +334,7 @@ export default function HomePage() {
             </div>
 
             {/* Card 4 */}
-            <div className="bg-white p-6 rounded-lg text-center">
+            <div className="bg-white p-6 rounded-lg text-center shadow-lg hover:shadow-xl transition-shadow">
               <div className="h-48 mb-4 overflow-hidden rounded-lg">
                 <Image
                   src="https://www.shutterstock.com/image-photo/doctor-patient-600nw-524000074.jpg"
@@ -327,6 +342,7 @@ export default function HomePage() {
                   width={300}
                   height={200}
                   className="w-full h-full object-cover"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
               </div>
               <h3 className="text-xl text-blue-600 mb-4">COMMITMENT TO EXCELLENCE</h3>
@@ -347,7 +363,7 @@ export default function HomePage() {
           <h2 className="text-3xl sm:text-4xl text-blue-600 text-center mb-12">WHY JOIN US AS A MEDICAL PROFESSIONAL</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 p-6 rounded-lg">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <h3 className="text-xl text-blue-600 mb-4">WORK-LIFE BALANCE</h3>
               <p className="text-gray-700 mb-6">
                 We understand the importance of maintaining a healthy work-life balance. As a member of the
@@ -361,11 +377,12 @@ export default function HomePage() {
                   width={400}
                   height={200}
                   className="w-full h-full object-cover"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
               </div>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <h3 className="text-xl text-blue-600 mb-4">INNOVATIVE APPROACH</h3>
               <p className="text-gray-700 mb-6">
                 Joining Molife means being part of a team that embraces innovation in healthcare delivery. We
@@ -377,7 +394,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <h3 className="text-xl text-blue-600 mb-4">IMPACTFUL WORK</h3>
               <p className="text-gray-700 mb-6">
                 At Molife Medical Services, you'll have the opportunity to make a real difference in the lives
@@ -397,13 +414,14 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="bg-white rounded-lg p-4">
+              <div className="bg-white rounded-lg p-4 shadow-lg">
                 <Image
                   src="/images/image1.png"
                   alt="Harare location map"
                   width={600}
                   height={400}
                   className="w-full h-auto rounded-lg"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
               </div>
             </div>
@@ -416,11 +434,11 @@ export default function HomePage() {
               <div className="space-y-4 mb-8">
                 <input
                   type="email"
-                  placeholder="Email Address"
-                  className="w-full px-4 py-3 rounded-lg text-gray-900"
+                  placeholder="Enter your email address"
+                  className="w-full px-4 py-3 rounded-lg text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"
                 />
-                <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors">
-                  Sign Up
+                <button className="w-full bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl">
+                  Sign Up for Updates
                 </button>
               </div>
             </div>
