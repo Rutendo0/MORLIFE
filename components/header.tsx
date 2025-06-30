@@ -89,7 +89,7 @@ function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="lg:hidden text-white p-2"
+          className="lg:hidden text-white p-2 hover:bg-blue-500/20 rounded-md transition-colors touch-manipulation"
           aria-label="Toggle menu"
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -100,32 +100,61 @@ function Header() {
       {isMenuOpen && (
         <nav className="lg:hidden mt-4 pb-4 border-t border-blue-300/30">
           <div className="flex flex-col space-y-3 pt-4">
-            <Link href="/new-page" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
+            <Link 
+              href="/new-page" 
+              className="text-white hover:text-blue-100 transition-colors py-3 px-4 rounded-md hover:bg-blue-500/20 touch-manipulation"
+              onClick={() => setIsMenuOpen(false)}
+            >
               New Page
             </Link>
-            <Link href="/" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
+            <Link 
+              href="/" 
+              className="text-white hover:text-blue-100 transition-colors py-3 px-4 rounded-md hover:bg-blue-500/20 touch-manipulation"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Home
             </Link>
-            <Link href="/offer" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
+            <Link 
+              href="/offer" 
+              className="text-white hover:text-blue-100 transition-colors py-3 px-4 rounded-md hover:bg-blue-500/20 touch-manipulation"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Offer
             </Link>
-            <Link href="/book-appointment" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
+            <Link 
+              href="/book-appointment" 
+              className="text-white hover:text-blue-100 transition-colors py-3 px-4 rounded-md hover:bg-blue-500/20 touch-manipulation"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Book Consultation
             </Link>
-            <Link href="/about-us" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
+            <Link 
+              href="/about-us" 
+              className="text-white hover:text-blue-100 transition-colors py-3 px-4 rounded-md hover:bg-blue-500/20 touch-manipulation"
+              onClick={() => setIsMenuOpen(false)}
+            >
               About us
             </Link>
-            <Link href="/contact" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
+            <Link 
+              href="/contact" 
+              className="text-white hover:text-blue-100 transition-colors py-3 px-4 rounded-md hover:bg-blue-500/20 touch-manipulation"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Contact
             </Link>
-            <Link href="/blog" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
+            <Link 
+              href="/blog" 
+              className="text-white hover:text-blue-100 transition-colors py-3 px-4 rounded-md hover:bg-blue-500/20 touch-manipulation"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Blog
             </Link>
             <Link
               href="https://13.60.66.168/portal/index.php?site=default"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-blue-600 px-4 py-2 rounded-lg font-medium hover:bg-blue-50 transition-colors mx-4 text-center"
+              className="bg-white text-blue-600 px-4 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors mx-4 text-center touch-manipulation"
+              onClick={() => setIsMenuOpen(false)}
             >
               Patient Portal
             </Link>
