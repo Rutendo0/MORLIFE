@@ -171,7 +171,7 @@ function Header() {
 
             {/* Offer Submenu */}
             {activeSubmenu === 'offer' && (
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-200 to-blue-400 rounded-md p-4 animate-in slide-in-from-right duration-300">
+              <div className="absolute inset-0 bg-blue-600 rounded-md p-4 animate-in slide-in-from-right duration-300 shadow-lg border border-blue-500/20">
                 <button 
                   className="text-white hover:text-blue-100 transition-colors py-3 px-2 rounded-md hover:bg-blue-500/20 touch-manipulation flex items-center mb-4"
                   onClick={() => setActiveSubmenu(null)}
@@ -200,7 +200,7 @@ function Header() {
 
             {/* About us Submenu */}
             {activeSubmenu === 'about' && (
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-200 to-blue-400 rounded-md p-4 animate-in slide-in-from-right duration-300">
+              <div className="absolute inset-0 bg-blue-600 rounded-md p-4 animate-in slide-in-from-right duration-300 shadow-lg border border-blue-500/20">
                 <button 
                   className="text-white hover:text-blue-100 transition-colors py-3 px-2 rounded-md hover:bg-blue-500/20 touch-manipulation flex items-center mb-4"
                   onClick={() => setActiveSubmenu(null)}
