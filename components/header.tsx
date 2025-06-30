@@ -179,9 +179,9 @@ function Header() {
                   <ChevronLeft size={20} className="mr-2" />
                   <span className="text-lg font-medium">Our Services</span>
                 </button>
-                
+
                 <div className="space-y-4">
-                  <div className="bg-blue-700/50 rounded-lg p-4 border border-blue-400/30">
+                  <div className="bg-blue-700 rounded-lg p-4 border border-blue-500/30">
                     <Link 
                       href="/offer/general-practitioner" 
                       className="block touch-manipulation"
@@ -195,8 +195,8 @@ function Header() {
                       </p>
                     </Link>
                   </div>
-                  
-                  <div className="bg-blue-700/50 rounded-lg p-4 border border-blue-400/30">
+
+                  <div className="bg-blue-700 rounded-lg p-4 border border-blue-500/30">
                     <Link 
                       href="/offer/psychology" 
                       className="block touch-manipulation"
@@ -224,9 +224,9 @@ function Header() {
                   <ChevronLeft size={20} className="mr-2" />
                   <span className="text-lg font-medium">About MOLIFE</span>
                 </button>
-                
+
                 <div className="space-y-4">
-                  <div className="bg-blue-700/50 rounded-lg p-4 border border-blue-400/30">
+                  <div className="bg-blue-700 rounded-lg p-4 border border-blue-500/30">
                     <Link 
                       href="/about-us/our-team" 
                       className="block touch-manipulation"
@@ -240,8 +240,8 @@ function Header() {
                       </p>
                     </Link>
                   </div>
-                  
-                  <div className="bg-blue-700/50 rounded-lg p-4 border border-blue-400/30">
+
+                  <div className="bg-blue-700 rounded-lg p-4 border border-blue-500/30">
                     <Link 
                       href="/about-us/who-we-are" 
                       className="block touch-manipulation"
@@ -255,8 +255,8 @@ function Header() {
                       </p>
                     </Link>
                   </div>
-                  
-                  <div className="bg-blue-700/50 rounded-lg p-4 border border-blue-400/30">
+
+                  <div className="bg-blue-700 rounded-lg p-4 border border-blue-500/30">
                     <Link 
                       href="/about-us/community-projects" 
                       className="block touch-manipulation"
