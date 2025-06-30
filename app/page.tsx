@@ -1,3 +1,4 @@
+
 import Header from "@/components/header"
 import Image from "next/image"
 import Link from "next/link"
@@ -9,23 +10,23 @@ export default function HomePage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-blue-400 to-blue-200 py-16">
+      <section className="bg-gradient-to-b from-blue-50 to-white py-16">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-16">
-            <p className="text-white text-sm sm:text-lg mb-6 sm:mb-8 tracking-wide">
+            <p className="text-blue-600 text-sm sm:text-lg mb-6 sm:mb-8 tracking-wide">
               EMPOWERING LIVES, ONE CLICK AT A TIME
             </p>
 
-            <h1 className="text-white text-2xl sm:text-4xl lg:text-6xl font-light leading-tight px-4">
+            <h1 className="text-blue-600 text-2xl sm:text-4xl lg:text-6xl font-light leading-tight px-4">
               <span className="font-bold">MOLIFE</span>
-              <span className="text-white">-YOUR TRUSTED DIGITAL</span>
+              <span className="text-blue-600">-YOUR TRUSTED DIGITAL</span>
               <br />
-              <span className="text-white">HEALTHCARE COMPANION</span>
+              <span className="text-blue-600">HEALTHCARE COMPANION</span>
             </h1>
           </div>
 
           <div className="flex justify-center px-4">
-            <div className=" w-full">
+            <div className="w-full">
               <Image
                 src="/images/image1.png"
                 alt="Healthcare professional"
@@ -39,10 +40,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-16 bg-gradient-to-b from-blue-400 to-blue-200 text-white">
+      {/* Services Section - MEDI HEALTH OFFERS */}
+      <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-center mb-12 sm:mb-16">OUR SERVICES</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-center mb-12 sm:mb-16">MEDI HEALTH OFFERS</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Telemedicine */}
@@ -52,6 +53,9 @@ export default function HomePage() {
                 Molife offers convenient and accessible telemedicine consultations, allowing users to connect with
                 healthcare professionals remotely for medical advice, diagnosis, and treatment recommendations.
               </p>
+              <Link href="/book-appointment" className="text-white underline hover:text-blue-200">
+                Learn more
+              </Link>
             </div>
 
             {/* E-Prescription Refills */}
@@ -61,6 +65,9 @@ export default function HomePage() {
                 Users can easily refill their prescriptions through the Molife app, saving time and effort by avoiding
                 unnecessary trips to the pharmacy.
               </p>
+              <Link href="/services" className="text-white underline hover:text-blue-200">
+                Learn more
+              </Link>
             </div>
 
             {/* Home Visits */}
@@ -70,6 +77,9 @@ export default function HomePage() {
                 Molife facilitates home visits by healthcare professionals for patients who require in-person medical
                 attention but are unable to visit a healthcare facility.
               </p>
+              <Link href="/services" className="text-white underline hover:text-blue-200">
+                Learn more
+              </Link>
             </div>
           </div>
         </div>
@@ -78,10 +88,9 @@ export default function HomePage() {
       {/* Mental Health Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl mb-12">MENTAL HEALTH SERVICES</h2>
-
           <div className="grid lg:grid-cols-3 gap-8 items-center">
             <div className="lg:col-span-1">
+              <h2 className="text-2xl sm:text-3xl text-blue-600 mb-4">MIND HEALTH</h2>
               <Image
                 src="https://thumbs.dreamstime.com/b/bottle-pills-18402018.jpg"
                 alt="Mental health medication"
@@ -92,25 +101,28 @@ export default function HomePage() {
             </div>
 
             <div className="lg:col-span-2">
-              <h2 className="text-2xl sm:text-3xl lg:text-2xl mb-8">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl text-blue-600 mb-8">
                 TAKE CARE OF YOUR MENTAL HEALTH, BOOK ONE OF OUR PROFESSIONALS!
               </h2>
 
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Psychologists */}
                 <div>
-                  <h3 className="text-xl sm:text-2xl text-blue-200 mb-4">PSYCHOLOGISTS</h3>
+                  <h3 className="text-xl sm:text-2xl text-blue-600 mb-4">PSYCHOLOGISTS</h3>
                   <p className="mb-4">
                     Molife Psychological Services offers compassionate and professional mental health support to
                     individuals facing challenges such as anxiety, depression, trauma, and relationship issues. Our team
                     of licensed psychologists provides personalized therapy and counseling sessions tailored to each
                     client's unique needs, helping them navigate life's complexities and achieve emotional well-being.
                   </p>
+                  <Link href="/book-appointment" className="text-blue-600 underline hover:text-blue-800">
+                    Book a consultation
+                  </Link>
                 </div>
 
                 {/* Psychiatrists */}
                 <div>
-                  <h3 className="text-xl sm:text-2xl text-blue-200 mb-4">PSYCHIATRISTS</h3>
+                  <h3 className="text-xl sm:text-2xl text-blue-600 mb-4">PSYCHIATRISTS</h3>
                   <p className="mb-4">
                     Our team of dedicated psychiatrists specializes in providing expert care and treatment for mental
                     health conditions. With extensive medical training and expertise, our psychiatrists are uniquely
@@ -118,6 +130,9 @@ export default function HomePage() {
                     when necessary. They focus on the biological aspects of mental illness, offering evidence-based
                     interventions and personalized treatment plans to address the root causes of psychological distress.
                   </p>
+                  <Link href="/book-appointment" className="text-blue-600 underline hover:text-blue-800">
+                    Book a consultation
+                  </Link>
                 </div>
               </div>
             </div>
@@ -125,7 +140,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Booking Guide Section */}
+      {/* How to Book Section */}
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -141,52 +156,36 @@ export default function HomePage() {
 
             <div>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl text-blue-600 mb-8">
-                HOW TO BOOK YOUR CONSULTATION
+                WONDERING HOW TO BOOK YOUR CONSULTATION?
               </h2>
               <p className="text-xl text-blue-600 mb-8">FOLLOW THESE EASY STEPS!</p>
 
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
                     1
                   </div>
                   <p>
-                    Visit our website and click on "Book Appointment" in the navigation menu.
+                    If you are using a computer scroll to the top of the screen and choose the "Book Appointment" tab, where you will find a "Book Now" button, please click the "Book Now" button.
                   </p>
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
                     2
                   </div>
                   <p>
-                    Choose your desired service and preferred date/time from our available slots.
+                    You'll be directed to our booking page where you can choose your desired service and preferred date/time.
                   </p>
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
                     3
                   </div>
                   <p>
-                    Fill in your personal details and any specific requirements for your consultation.
+                    Once you've selected your appointment slot, follow the prompts to provide your details (If you would like the doctor to contact you via whatsapp or direct call).
                   </p>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">
-                    4
-                  </div>
-                  <p>
-                    Complete your booking with secure payment through our integrated payment system.
-                  </p>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">
-                    5
-                  </div>
-                  <p>Receive confirmation email with all appointment details and meeting instructions.</p>
                 </div>
               </div>
             </div>
@@ -195,7 +194,7 @@ export default function HomePage() {
       </section>
 
       {/* Medical Equipment Section */}
-      <section className="py-16 bg-blue-300 text-white">
+      <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -210,28 +209,60 @@ export default function HomePage() {
 
             <div className="order-1 lg:order-2">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-8">
-                MEDICAL EQUIPMENT SUPPLIER
+                WE ARE ALSO A SUPPLIER OF MEDICAL EQUIPMENT
               </h2>
               <p className="text-lg">
                 MoLife is not just about innovative healthcare technology; we also offer a comprehensive range of
                 high-quality medical supplies. From essential consumables to specialized equipment, we ensure that
                 healthcare professionals have access to the tools they need to deliver exceptional patient care. Our
                 diverse catalog includes everything from PPE (Personal Protective Equipment) to diagnostic tools,
-                ensuring that healthcare facilities are well-equipped to meet the needs of their patients.
+                ensuring that healthcare facilities are well-equipped to meet the needs of their patients. With MoLife, healthcare
+                providers can streamline their procurement process, access competitive pricing, and
+                benefit from reliable delivery services.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
+      {/* Take Charge of Your Health */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl text-blue-600 text-center mb-12">WHY CHOOSE MOLIFE?</h2>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-2xl sm:text-3xl text-blue-600 mb-8">
+                TAKE CHARGE OF YOUR HEALTH
+              </h2>
+              <Image
+                src="/images/doctor.JPG"
+                alt="Doctor consulting with patient"
+                width={600}
+                height={400}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+
+            <div className="text-center">
+              <h3 className="text-2xl sm:text-3xl text-blue-600 mb-8">REACH OUT TO US</h3>
+              <Link
+                href="/book-appointment"
+                className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-700 transition-colors inline-block"
+              >
+                Book a consultation
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl text-blue-600 text-center mb-12">WHY JOIN US AS A CLIENT?</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Card 1 */}
-            <div className="bg-gray-100 p-6 rounded-lg">
+            <div className="bg-white p-6 rounded-lg text-center">
               <div className="h-48 mb-4 overflow-hidden rounded-lg">
                 <Image
                   src="https://www.digitalpharmacist.com/wp-content/uploads/2020/09/dreamstime_l_135110090.jpg"
@@ -241,14 +272,16 @@ export default function HomePage() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl text-blue-600 text-center mb-4">CONVENIENCE</h3>
-              <p className="text-sm text-center">
-                Access healthcare services from the comfort of your home with our user-friendly digital platform.
+              <h3 className="text-xl text-blue-600 mb-4">CONVENIENCE AND ACCESSIBILITY</h3>
+              <p className="text-sm">
+                With our user-friendly online platform, accessing healthcare services has never been easier. You
+                can schedule appointments, chat with doctors, and refill prescriptions from the comfort of
+                your own home, saving you time and hassle.
               </p>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-gray-100 p-6 rounded-lg">
+            <div className="bg-white p-6 rounded-lg text-center">
               <div className="h-48 mb-4 overflow-hidden rounded-lg">
                 <Image
                   src="https://www.shelterfirstresponder.com/wp-content/uploads/2020/03/coronavirus-field-hospital.jpg"
@@ -258,61 +291,152 @@ export default function HomePage() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl text-blue-600 text-center mb-4">QUALITY CARE</h3>
-              <p className="text-sm text-center">
-                Our experienced healthcare professionals provide personalized and compassionate care to every patient.
+              <h3 className="text-xl text-blue-600 mb-4">QUALITY CARE</h3>
+              <p className="text-sm">
+                At Molife Medical Services, we prioritize quality care above all else. Our team of experienced
+                healthcare professionals is dedicated to providing personalized and compassionate
+                care to each and every client.
               </p>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-gray-100 p-6 rounded-lg">
+            <div className="bg-white p-6 rounded-lg text-center">
               <div className="h-48 mb-4 overflow-hidden rounded-lg">
                 <Image
                   src="https://www.hayatmed.com/wp-content/uploads/2023/06/Cost-of-butt-implant-surgery.jpg"
-                  alt="Doctor with patient"
+                  alt="Affordable healthcare"
                   width={300}
                   height={200}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl text-blue-600 text-center mb-4">AFFORDABLE PRICING</h3>
-              <p className="text-sm text-center">
-                Quality healthcare at competitive prices that won't break the bank.
+              <h3 className="text-xl text-blue-600 mb-4">AFFORDABLE PRICING</h3>
+              <p className="text-sm">
+                We understand the importance of affordable healthcare, which is
+                why we offer competitive pricing for all our services. With Molife
+                Medical Services, you can access high-quality healthcare at prices
+                that won't break the bank.
               </p>
             </div>
 
             {/* Card 4 */}
-            <div className="bg-gray-100 p-6 rounded-lg">
+            <div className="bg-white p-6 rounded-lg text-center">
               <div className="h-48 mb-4 overflow-hidden rounded-lg">
                 <Image
                   src="https://www.shutterstock.com/image-photo/doctor-patient-600nw-524000074.jpg"
-                  alt="Doctor with patient"
+                  alt="Commitment to excellence"
                   width={300}
                   height={200}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl text-blue-600 text-center mb-4">EXCELLENCE</h3>
-              <p className="text-sm text-center">
-                Committed to delivering the highest standards of healthcare through innovation and expertise.
+              <h3 className="text-xl text-blue-600 mb-4">COMMITMENT TO EXCELLENCE</h3>
+              <p className="text-sm">
+                We are committed to excellence in everything we do. From our state-
+                of-the-art facilities to our cutting-edge technology, we strive to
+                deliver the best possible healthcare experience for our
+                clients.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-blue-300 text-white text-center">
+      {/* Why Join Us as Medical Professional */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-8">READY TO START YOUR HEALTHCARE JOURNEY?</h2>
-          <Link
-            href="/book-appointment"
-            className="inline-flex items-center bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
-          >
-            Book Appointment <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
+          <h2 className="text-3xl sm:text-4xl text-blue-600 text-center mb-12">WHY JOIN US AS A MEDICAL PROFESSIONAL</h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl text-blue-600 mb-4">WORK-LIFE BALANCE</h3>
+              <p className="text-gray-700 mb-6">
+                We understand the importance of maintaining a healthy work-life balance. As a member of the
+                Molife team, you'll enjoy flexible scheduling options and supportive policies that allow you to
+                prioritize your well-being while delivering exceptional care to our patients.
+              </p>
+              <div className="h-48 overflow-hidden rounded-lg">
+                <Image
+                  src="/images/doctor.JPG"
+                  alt="Work-life balance"
+                  width={400}
+                  height={200}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl text-blue-600 mb-4">INNOVATIVE APPROACH</h3>
+              <p className="text-gray-700 mb-6">
+                Joining Molife means being part of a team that embraces innovation in healthcare delivery. We
+                leverage cutting-edge technology and modern practices to enhance patient care and streamline
+                workflows, allowing you to practice medicine more efficiently and effectively.
+              </p>
+              <div className="h-48 overflow-hidden rounded-lg bg-blue-100 flex items-center justify-center">
+                <span className="text-6xl">💡</span>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl text-blue-600 mb-4">IMPACTFUL WORK</h3>
+              <p className="text-gray-700 mb-6">
+                At Molife Medical Services, you'll have the opportunity to make a real difference in the lives
+                of patients. We're committed to providing high-quality healthcare services that improve the
+                health outcomes of individuals and communities.
+              </p>
+              <div className="h-48 overflow-hidden rounded-lg bg-black flex items-center justify-center">
+                <span className="text-white text-2xl font-bold">DO SOMETHING GREAT</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Final CTA Section with Map */}
+      <section className="py-16 bg-blue-600 text-white">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="bg-white rounded-lg p-4">
+                <Image
+                  src="/images/image1.png"
+                  alt="Harare location map"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+            </div>
+
+            <div className="text-center lg:text-left">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-8">
+                BRINGING HEALTH TO YOUR FINGERTIPS, ONE CLICK AT A TIME WITH MOLIFE MEDICAL SERVICES.
+              </h2>
+              
+              <div className="space-y-4 mb-8">
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full px-4 py-3 rounded-lg text-gray-900"
+                />
+                <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-white py-8 text-center">
+        <div className="container mx-auto px-4 sm:px-6">
+          <p className="text-gray-600">
+            2024 copyright MoLife medical services, designed by <strong>Gorilla Research and Investments</strong>
+          </p>
+        </div>
+      </footer>
     </div>
   )
 }
