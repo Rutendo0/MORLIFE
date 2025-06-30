@@ -1,3 +1,4 @@
+
 "use client"
 
 import Link from "next/link"
@@ -15,33 +16,30 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-         <Link href="/" className="text-white hover:text-blue-100 transition-colors text-sm xl:text-base">
+        <nav className="hidden lg:flex items-center space-x-8">
+          <Link href="/" className="text-white hover:text-blue-100 transition-colors">
             Home
           </Link>
-          <Link href="/offer" className="text-white hover:text-blue-100 transition-colors text-sm xl:text-base">
-            Offer
+          <Link href="/about-us" className="text-white hover:text-blue-100 transition-colors">
+            About Us
           </Link>
-          <Link
-            href="/cbhi-membership"
-            className="text-white hover:text-blue-100 transition-colors text-sm xl:text-base"
-          >
-            CBHI Membership
+          <Link href="/services" className="text-white hover:text-blue-100 transition-colors">
+            Services
           </Link>
-          <Link href="/about-us" className="text-white hover:text-blue-100 transition-colors text-sm xl:text-base">
-            About us
+          <Link href="/book-appointment" className="text-white hover:text-blue-100 transition-colors">
+            Book Appointment
           </Link>
-          <Link href="/contact" className="text-white hover:text-blue-100 transition-colors text-sm xl:text-base">
+          <Link href="/contact" className="text-white hover:text-blue-100 transition-colors">
             Contact
           </Link>
-          <Link href="/blog" className="text-white hover:text-blue-100 transition-colors text-sm xl:text-base">
+          <Link href="/blog" className="text-white hover:text-blue-100 transition-colors">
             Blog
           </Link>
           <Link
             href="https://13.60.66.168/portal/index.php?site=default"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-blue-600 px-3 xl:px-4 py-2 rounded-lg font-medium hover:bg-blue-50 transition-colors text-sm xl:text-base"
+            className="bg-white text-blue-600 px-4 py-2 rounded-lg font-medium hover:bg-blue-50 transition-colors"
           >
             Patient Portal
           </Link>
@@ -62,19 +60,16 @@ export default function Header() {
         <nav className="lg:hidden mt-4 pb-4 border-t border-blue-300/30">
           <div className="flex flex-col space-y-3 pt-4">
             <Link href="/" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
-              New Page
-            </Link>
-            <Link href="/" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
               Home
             </Link>
-            <Link href="/offer" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
-              Offer
-            </Link>
-            <Link href="/cbhi-membership" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
-              CBHI Membership
-            </Link>
             <Link href="/about-us" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
-              About us
+              About Us
+            </Link>
+            <Link href="/services" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
+              Services
+            </Link>
+            <Link href="/book-appointment" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
+              Book Appointment
             </Link>
             <Link href="/contact" className="text-white hover:text-blue-100 transition-colors py-2 px-4">
               Contact
