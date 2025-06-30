@@ -117,7 +117,7 @@ function Header() {
               >
                 Home
               </Link>
-              
+
               {/* Offer with Dropdown */}
               <button 
                 className="text-white hover:text-blue-100 transition-colors py-3 px-4 rounded-md hover:bg-blue-500/20 touch-manipulation w-full text-left flex items-center justify-between"
@@ -126,7 +126,7 @@ function Header() {
                 <span>Offer</span>
                 <ChevronDown size={16} />
               </button>
-              
+
               <Link 
                 href="/book-appointment" 
                 className="text-white hover:text-blue-100 transition-colors py-3 px-4 rounded-md hover:bg-blue-500/20 touch-manipulation block"
@@ -134,7 +134,7 @@ function Header() {
               >
                 Book Consultation
               </Link>
-              
+
               {/* About us with Dropdown */}
               <button 
                 className="text-white hover:text-blue-100 transition-colors py-3 px-4 rounded-md hover:bg-blue-500/20 touch-manipulation w-full text-left flex items-center justify-between"
@@ -143,7 +143,7 @@ function Header() {
                 <span>About us</span>
                 <ChevronDown size={16} />
               </button>
-              
+
               <Link 
                 href="/contact" 
                 className="text-white hover:text-blue-100 transition-colors py-3 px-4 rounded-md hover:bg-blue-500/20 touch-manipulation block"
