@@ -8,134 +8,134 @@ export default function OfferPage() {
     <div className="min-h-screen bg-white">
       <Header />
 
-      <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-16">
-        <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-light text-blue-600 mb-6">
-            OUR SERVICES
-          </h1>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Comprehensive healthcare solutions designed to meet all your medical needs
-          </p>
-        </div>
-
-        {/* Main Services Grid */}
-        <section className="mb-16">
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* General Practitioner */}
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="mb-4">
-                <Image
-                  src="/images/doctor.JPG"
-                  alt="General Practitioner consultation"
-                  width={400}
-                  height={250}
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-              </div>
-              <h3 className="text-xl font-semibold mb-4 text-blue-600">GENERAL PRACTITIONER</h3>
-              <p className="text-gray-700">
-                Comprehensive health assessments, diagnosis, treatment, and management of various medical 
-                conditions. We also provide regular check-ups, health screenings, vaccinations, and lifestyle 
-                counseling to prevent illness and promote overall well-being.
-              </p>
-            </div>
-
-            {/* Telemedicine Consultations */}
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="mb-4">
-                <Image
-                  src="/images/image2.png"
-                  alt="Telemedicine consultation"
-                  width={400}
-                  height={250}
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-              </div>
-              <h3 className="text-xl font-semibold mb-4 text-blue-600">TELEMEDICINE CONSULTATIONS</h3>
-              <p className="text-gray-700">
-                Virtual appointments with healthcare providers for convenient access to medical advice, 
-                prescription refills, and follow-up care from the comfort of home or office.
-              </p>
-            </div>
-
-            {/* Referral Coordination */}
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="mb-4">
-                <Image
-                  src="/images/image3.png"
-                  alt="Medical referral coordination"
-                  width={400}
-                  height={250}
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-              </div>
-              <h3 className="text-xl font-semibold mb-4 text-blue-600">REFERRAL COORDINATION</h3>
-              <p className="text-gray-700">
-                Collaboration with specialists, hospitals, and other healthcare providers to facilitate 
-                timely referrals and continuity of care for complex medical conditions or specialized 
-                treatment needs.
-              </p>
-            </div>
+      {/* Hero Section */}
+      <section className="relative py-16 bg-gradient-to-b from-blue-50 to-white">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-light text-blue-600 mb-6">
+              OUR OFFERS
+            </h1>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+              EMPOWERING LIVES, ONE CLICK AT A TIME
+            </p>
+            <p className="text-xl text-blue-600 font-medium">
+              MOLIFE - YOUR TRUSTED DIGITAL HEALTH PARTNER
+            </p>
           </div>
+        </div>
+      </section>
 
-          {/* Second Row of Services */}
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Occupational Health Services */}
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="mb-4">
-                <Image
-                  src="https://blackdoctor.org/wp-content/uploads/2022/12/doctor-patient-612x350.jpg"
-                  alt="Occupational health services"
-                  width={400}
-                  height={250}
-                  className="w-full h-48 object-cover rounded-lg"
-                />
+      <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-16">
+        {/* Main Service Categories */}
+        <section className="mb-16">
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            
+            {/* General Practitioner */}
+            <div className="text-center">
+              <div className="bg-blue-600 text-white p-8 rounded-lg mb-6">
+                <h2 className="text-2xl sm:text-3xl font-light mb-4">General practitioner</h2>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-blue-600">OCCUPATIONAL HEALTH SERVICES</h3>
-              <p className="text-gray-700">
-                Workplace health assessments, pre-employment screenings, drug testing, and injury 
-                management services to promote employee health and safety in the workplace.
-              </p>
+              <div className="space-y-6">
+                <div className="bg-white p-6 rounded-lg shadow-lg">
+                  <Image
+                    src="/images/doctor.JPG"
+                    alt="General Practitioner consultation"
+                    width={400}
+                    height={250}
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 className="text-xl font-semibold mb-4 text-blue-600">COMPREHENSIVE MEDICAL CARE</h3>
+                  <p className="text-gray-700 mb-4">
+                    Our qualified general practitioners provide comprehensive health assessments, diagnosis, 
+                    treatment, and management of various medical conditions. We offer regular check-ups, 
+                    health screenings, vaccinations, and lifestyle counseling.
+                  </p>
+                  <Link
+                    href="/book-appointment"
+                    className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors inline-block"
+                  >
+                    Book Consultation
+                  </Link>
+                </div>
+
+                {/* Additional GP Services */}
+                <div className="grid gap-4">
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-blue-600 mb-2">TELEMEDICINE CONSULTATIONS</h4>
+                    <p className="text-gray-700 text-sm">
+                      Virtual appointments for convenient access to medical advice and follow-up care.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-blue-600 mb-2">E-PRESCRIPTION REFILLS</h4>
+                    <p className="text-gray-700 text-sm">
+                      Convenient online platform for prescription refills and medication management.
+                    </p>
+                  </div>
+
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-blue-600 mb-2">OCCUPATIONAL HEALTH</h4>
+                    <p className="text-gray-700 text-sm">
+                      Workplace health assessments, pre-employment screenings, and injury management.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            {/* Online Prescription Refills */}
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="mb-4">
-                <Image
-                  src="https://thumbs.dreamstime.com/b/bottle-pills-18402018.jpg"
-                  alt="Online prescription refills"
-                  width={400}
-                  height={250}
-                  className="w-full h-48 object-cover rounded-lg"
-                />
+            {/* Psychological Services */}
+            <div className="text-center">
+              <div className="bg-blue-600 text-white p-8 rounded-lg mb-6">
+                <h2 className="text-2xl sm:text-3xl font-light mb-4">Psychological services</h2>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-blue-600">ONLINE PRESCRIPTION REFILLS</h3>
-              <p className="text-gray-700">
-                Convenient online platform for patients to request prescription refills, review 
-                medication instructions, and receive electronic prescriptions from healthcare providers, 
-                streamlining the medication management process and ensuring timely access to necessary 
-                medications.
-              </p>
-            </div>
+              <div className="space-y-6">
+                <div className="bg-white p-6 rounded-lg shadow-lg">
+                  <Image
+                    src="https://www.shutterstock.com/image-photo/doctor-patient-600nw-524000074.jpg"
+                    alt="Psychology consultation session"
+                    width={400}
+                    height={250}
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 className="text-xl font-semibold mb-4 text-blue-600">MENTAL HEALTH SUPPORT</h3>
+                  <p className="text-gray-700 mb-4">
+                    Professional mental health support with licensed psychologists and psychiatrists. 
+                    We provide personalized therapy and counseling sessions for anxiety, depression, 
+                    trauma, and relationship issues.
+                  </p>
+                  <Link
+                    href="/offer/psychology"
+                    className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors inline-block"
+                  >
+                    Learn More
+                  </Link>
+                </div>
 
-            {/* Secure Access to Medical History */}
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="mb-4">
-                <Image
-                  src="/images/image1.png"
-                  alt="Secure medical history access"
-                  width={400}
-                  height={250}
-                  className="w-full h-48 object-cover rounded-lg"
-                />
+                {/* Additional Psychology Services */}
+                <div className="grid gap-4">
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-blue-600 mb-2">INDIVIDUAL COUNSELING</h4>
+                    <p className="text-gray-700 text-sm">
+                      One-on-one therapy sessions with trained counselors for personal growth.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-blue-600 mb-2">FAMILY THERAPY</h4>
+                    <p className="text-gray-700 text-sm">
+                      Counseling sessions to improve family communication and relationships.
+                    </p>
+                  </div>
+
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-blue-600 mb-2">PSYCHIATRIC SERVICES</h4>
+                    <p className="text-gray-700 text-sm">
+                      Medical treatment and medication management for mental health disorders.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-blue-600">SECURE ACCESS TO MEDICAL HISTORY</h3>
-              <p className="text-gray-700">
-                With Molife Medical Services, you can have secure access to your comprehensive medical 
-                history stored in compliance with data protection regulations. This feature allows you 
-                to review your medical records at any time, promoting transparency, empowerment, and 
-                informed decision-making regarding your healthcare.
-              </p>
             </div>
           </div>
         </section>
