@@ -3,8 +3,9 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
+import { memo } from "react"
 
-export default function Header() {
+function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
@@ -134,3 +135,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default memo(Header)

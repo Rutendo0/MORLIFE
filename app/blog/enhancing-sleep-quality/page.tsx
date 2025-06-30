@@ -23,6 +23,7 @@ export default function EnhancingSleepQualityPage() {
               width={600}
               height={400}
               className="w-full h-auto rounded-lg shadow-lg"
+              style={{ width: 'auto', height: 'auto' }}
             />
           </div>
         </div>

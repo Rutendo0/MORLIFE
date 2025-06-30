@@ -1,4 +1,3 @@
-
 import Header from "@/components/header"
 import Image from "next/image"
 import Link from "next/link"
@@ -413,7 +412,7 @@ export default function HomePage() {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-8">
                 BRINGING HEALTH TO YOUR FINGERTIPS, ONE CLICK AT A TIME WITH MOLIFE MEDICAL SERVICES.
               </h2>
-              
+
               <div className="space-y-4 mb-8">
                 <input
                   type="email"
