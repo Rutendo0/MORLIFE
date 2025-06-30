@@ -8,8 +8,16 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Molife Medical Services",
   description: "Bringing health to your fingertips, one click at a time with Molife Medical Services",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
+}
+
+export function generateViewport() {
+  return {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+    userScalable: true,
+  }
 }
 
 export default function RootLayout({
