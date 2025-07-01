@@ -11,7 +11,7 @@ const nextConfig = {
   output: 'standalone',
   experimental: {
     allowedDevOrigins: [
-      /.*\.replit\.dev$/,
+      '*.replit.dev',
       'localhost:3000',
       '127.0.0.1:3000'
     ]
