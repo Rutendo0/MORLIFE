@@ -1,13 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   images: {
-    unoptimized: false,
     remotePatterns: [
       {
         protocol: 'https',
@@ -15,13 +8,14 @@ const nextConfig = {
       },
     ],
   },
+  output: 'standalone',
   experimental: {
-    optimizeCss: true,
-    optimizePackageImports: ['lucide-react'],
-  },
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
-  },
+    allowedDevOrigins: [
+      /.*\.replit\.dev$/,
+      'localhost:3000',
+      '127.0.0.1:3000'
+    ]
+  }
 }
 
 export default nextConfig

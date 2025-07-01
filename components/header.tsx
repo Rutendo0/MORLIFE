@@ -171,41 +171,41 @@ function Header() {
 
             {/* Offer Submenu */}
             {activeSubmenu === 'offer' && (
-              <div className="absolute inset-0 bg-blue-600 rounded-md p-4 animate-in slide-in-from-right duration-300 shadow-lg border border-blue-500/20">
+              <div className="absolute inset-0 bg-blue-600 rounded-lg p-4 animate-in slide-in-from-right duration-300 shadow-xl border border-blue-500/20 min-h-[400px]">
                 <button 
-                  className="text-white hover:text-blue-100 transition-colors py-3 px-2 rounded-md hover:bg-blue-500/20 touch-manipulation flex items-center mb-6"
+                  className="text-white hover:text-blue-100 transition-colors py-4 px-3 rounded-lg hover:bg-blue-500/20 touch-manipulation flex items-center mb-6 w-full text-left"
                   onClick={() => setActiveSubmenu(null)}
                 >
-                  <ChevronLeft size={20} className="mr-2" />
-                  <span className="text-lg font-medium">Our Services</span>
+                  <ChevronLeft size={22} className="mr-3" />
+                  <span className="text-xl font-semibold">Our Services</span>
                 </button>
 
-                <div className="space-y-4">
-                  <div className="bg-blue-700 rounded-lg p-4 border border-blue-500/30">
+                <div className="space-y-5">
+                  <div className="bg-blue-700 rounded-xl p-5 border border-blue-500/30 hover:bg-blue-600/80 transition-all duration-200">
                     <Link 
                       href="/offer/general-practitioner" 
                       className="block touch-manipulation"
                       onClick={() => { setIsMenuOpen(false); setActiveSubmenu(null); }}
                     >
-                      <h3 className="text-white font-semibold text-lg mb-2 hover:text-blue-100 transition-colors">
+                      <h3 className="text-white font-bold text-xl mb-3 hover:text-blue-100 transition-colors">
                         General Practitioner
                       </h3>
-                      <p className="text-blue-100 text-sm leading-relaxed">
+                      <p className="text-blue-100 text-base leading-relaxed">
                         Comprehensive medical care, health screenings, vaccinations, and telemedicine consultations
                       </p>
                     </Link>
                   </div>
 
-                  <div className="bg-blue-700 rounded-lg p-4 border border-blue-500/30">
+                  <div className="bg-blue-700 rounded-xl p-5 border border-blue-500/30 hover:bg-blue-600/80 transition-all duration-200">
                     <Link 
                       href="/offer/psychology" 
                       className="block touch-manipulation"
                       onClick={() => { setIsMenuOpen(false); setActiveSubmenu(null); }}
                     >
-                      <h3 className="text-white font-semibold text-lg mb-2 hover:text-blue-100 transition-colors">
+                      <h3 className="text-white font-bold text-xl mb-3 hover:text-blue-100 transition-colors">
                         Psychological Services
                       </h3>
-                      <p className="text-blue-100 text-sm leading-relaxed">
+                      <p className="text-blue-100 text-base leading-relaxed">
                         Mental health support, therapy sessions, family counseling, and psychiatric services
                       </p>
                     </Link>
@@ -216,23 +216,23 @@ function Header() {
 
             {/* About us Submenu */}
             {activeSubmenu === 'about' && (
-              <div className="absolute inset-0 bg-blue-600 rounded-md p-4 animate-in slide-in-from-right duration-300 shadow-lg border border-blue-500/20">
+              <div className="absolute inset-0 bg-blue-600 rounded-lg p-4 animate-in slide-in-from-right duration-300 shadow-xl border border-blue-500/20 min-h-[500px]">
                 <button 
-                  className="text-white hover:text-blue-100 transition-colors py-3 px-2 rounded-md hover:bg-blue-500/20 touch-manipulation flex items-center mb-6"
+                  className="text-white hover:text-blue-100 transition-colors py-4 px-3 rounded-lg hover:bg-blue-500/20 touch-manipulation flex items-center mb-6 w-full text-left"
                   onClick={() => setActiveSubmenu(null)}
                 >
-                  <ChevronLeft size={20} className="mr-2" />
-                  <span className="text-lg font-medium">About MOLIFE</span>
+                  <ChevronLeft size={22} className="mr-3" />
+                  <span className="text-xl font-semibold">About MOLIFE</span>
                 </button>
 
                 <div className="space-y-4">
-                  <div className="bg-blue-700 rounded-lg p-4 border border-blue-500/30">
+                  <div className="bg-blue-700 rounded-xl p-5 border border-blue-500/30 hover:bg-blue-600/80 transition-all duration-200">
                     <Link 
                       href="/about-us/our-team" 
                       className="block touch-manipulation"
                       onClick={() => { setIsMenuOpen(false); setActiveSubmenu(null); }}
                     >
-                      <h3 className="text-white font-semibold text-lg mb-2 hover:text-blue-100 transition-colors">
+                      <h3 className="text-white font-bold text-lg mb-3 hover:text-blue-100 transition-colors">
                         Our Team
                       </h3>
                       <p className="text-blue-100 text-sm leading-relaxed">
@@ -241,13 +241,13 @@ function Header() {
                     </Link>
                   </div>
 
-                  <div className="bg-blue-700 rounded-lg p-4 border border-blue-500/30">
+                  <div className="bg-blue-700 rounded-xl p-5 border border-blue-500/30 hover:bg-blue-600/80 transition-all duration-200">
                     <Link 
                       href="/about-us/who-we-are" 
                       className="block touch-manipulation"
                       onClick={() => { setIsMenuOpen(false); setActiveSubmenu(null); }}
                     >
-                      <h3 className="text-white font-semibold text-lg mb-2 hover:text-blue-100 transition-colors">
+                      <h3 className="text-white font-bold text-lg mb-3 hover:text-blue-100 transition-colors">
                         Who We Are
                       </h3>
                       <p className="text-blue-100 text-sm leading-relaxed">
@@ -256,13 +256,13 @@ function Header() {
                     </Link>
                   </div>
 
-                  <div className="bg-blue-700 rounded-lg p-4 border border-blue-500/30">
+                  <div className="bg-blue-700 rounded-xl p-5 border border-blue-500/30 hover:bg-blue-600/80 transition-all duration-200">
                     <Link 
                       href="/about-us/community-projects" 
                       className="block touch-manipulation"
                       onClick={() => { setIsMenuOpen(false); setActiveSubmenu(null); }}
                     >
-                      <h3 className="text-white font-semibold text-lg mb-2 hover:text-blue-100 transition-colors">
+                      <h3 className="text-white font-bold text-lg mb-3 hover:text-blue-100 transition-colors">
                         Community Projects
                       </h3>
                       <p className="text-blue-100 text-sm leading-relaxed">
