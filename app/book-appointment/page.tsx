@@ -146,8 +146,8 @@ export default function BookAppointmentPage() {
       <Header />
 
       {/* Hero Section with Hands Holding Phone */}
-      <section className="relative h-[60vh] bg-cover bg-center" style={{
-        backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAxMDAwIDYwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwMDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxyZWN0IHg9IjMwMCIgeT0iMjAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgcng9IjIwIiBmaWxsPSIjMzc0MTUxIi8+CjxyZWN0IHg9IjQ0MCIgeT0iMjQwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQiIHJ4PSIyIiBmaWxsPSIjRjNGNEY2Ii8+CjxyZWN0IHg9IjQ0MCIgeT0iMzIwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQwIiByeD0iMjAiIGZpbGw9IiNGM0Y0RjYiLz4KPC9zdmc+')"
+      <section className="relative h-[80vh] bg-cover bg-center" style={{
+        backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://www.siliconrepublic.com/wp-content/uploads/2020/03/Hospital.png')"
       }}>
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
         <div className="relative z-10 flex items-center justify-center h-full">

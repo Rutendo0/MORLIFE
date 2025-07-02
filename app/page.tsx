@@ -1,7 +1,6 @@
 import Header from "@/components/header"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -16,11 +15,11 @@ export default function HomePage() {
               EMPOWERING LIVES, ONE CLICK AT A TIME
             </p>
 
-            <h1 className="text-blue-600 text-2xl sm:text-4xl lg:text-6xl font-light leading-tight px-4">
+            <h1 className="text-blue-600 text-1xl sm:text-4xl lg:text-6xl font-light leading-tight px-4">
               <span className="font-bold">MOLIFE</span>
-              <span className="text-blue-600">-YOUR TRUSTED DIGITAL</span>
+              <span className="text-blue-400">-YOUR TRUSTED DIGITAL</span>
               <br />
-              <span className="text-blue-600">HEALTHCARE COMPANION</span>
+              <span className="text-blue-400">HEALTHCARE COMPANION</span>
             </h1>
           </div>
 
@@ -31,7 +30,7 @@ export default function HomePage() {
                 alt="Healthcare professional"
                 width={1400}
                 height={800}
-                className="w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] object-cover rounded-lg"
+                className="w-full h-[80vh] sm:h-[80vh] lg:h-[80vh] object-cover rounded-lg"
                 priority
               />
             </div>
@@ -40,7 +39,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Section - MEDI HEALTH OFFERS */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-blue-400 text-white">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-center mb-12 sm:mb-16">MEDI HEALTH OFFERS</h2>
 
@@ -89,7 +88,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-3 gap-8 items-center">
             <div className="lg:col-span-1">
-              <h2 className="text-2xl sm:text-3xl text-blue-600 mb-4">MIND HEALTH</h2>
+              <h2 className="text-2xl sm:text-3xl text-blue-400 mb-4">MIND HEALTH</h2>
               <Image
                 src="https://thumbs.dreamstime.com/b/bottle-pills-18402018.jpg"
                 alt="Mental health medication"
@@ -100,15 +99,15 @@ export default function HomePage() {
             </div>
 
             <div className="lg:col-span-2">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl text-blue-600 mb-8">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl text-blue-500 mb-8">
                 TAKE CARE OF YOUR MENTAL HEALTH, BOOK ONE OF OUR PROFESSIONALS!
               </h2>
 
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Psychologists */}
                 <div>
-                  <h3 className="text-xl sm:text-2xl text-blue-600 mb-4">PSYCHOLOGISTS</h3>
-                  <p className="mb-4">
+                  <h3 className="text-xl sm:text-1xl text-blue-600 mb-4">PSYCHOLOGISTS</h3>
+                  <p className="mb-3">
                     Molife Psychological Services offers compassionate and professional mental health support to
                     individuals facing challenges such as anxiety, depression, trauma, and relationship issues. Our team
                     of licensed psychologists provides personalized therapy and counseling sessions tailored to each
@@ -121,8 +120,8 @@ export default function HomePage() {
 
                 {/* Psychiatrists */}
                 <div>
-                  <h3 className="text-xl sm:text-2xl text-blue-600 mb-4">PSYCHIATRISTS</h3>
-                  <p className="mb-4">
+                  <h3 className="text-xl sm:text-1xl text-blue-600 mb-4">PSYCHIATRISTS</h3>
+                  <p className="mb-3">
                     Our team of dedicated psychiatrists specializes in providing expert care and treatment for mental
                     health conditions. With extensive medical training and expertise, our psychiatrists are uniquely
                     equipped to diagnose and manage complex mental health disorders, including medication management
@@ -158,7 +157,7 @@ export default function HomePage() {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl text-blue-600 mb-8">
                 WONDERING HOW TO BOOK YOUR CONSULTATION?
               </h2>
-              <p className="text-xl text-blue-600 mb-8">FOLLOW THESE EASY STEPS!</p>
+              <p className="text-xl text-blue-500 mb-8">FOLLOW THESE EASY STEPS!</p>
 
               <div className="space-y-6">
                 <div className="flex gap-4 items-start">
@@ -166,7 +165,6 @@ export default function HomePage() {
                     1
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-semibold text-blue-600 mb-2">Navigate to Booking</h4>
                     <p className="text-gray-700">
                       Scroll to the top of the screen and choose the "Book Appointment" tab, where you will find a "Book Now" button.
                     </p>
@@ -178,9 +176,8 @@ export default function HomePage() {
                     2
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-semibold text-blue-600 mb-2">Select Service & Time</h4>
                     <p className="text-gray-700">
-                      Choose your desired service and preferred date/time from our available slots.
+                      You'll be directed to our booking page where you can choose your desired service and preferred date/time.
                     </p>
                   </div>
                 </div>
@@ -190,9 +187,38 @@ export default function HomePage() {
                     3
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-semibold text-blue-600 mb-2">Provide Contact Details</h4>
                     <p className="text-gray-700">
-                      Follow the prompts to provide your details and choose your preferred contact method (WhatsApp or phone call).
+                      Once you've selected your appointment slot, follow the prompts to provide your details and proceed to the payment step.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center font-bold shadow-lg">
+                    4
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-gray-700">
+                     Secure your appointment instantly by entering your card details through our integrated secure payment system..
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center font-bold shadow-lg">
+                    5
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-gray-700">
+                     After booking, you'll receive a confirmation email with all the details of your appointment.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center font-bold shadow-lg">
+                    6
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-gray-700">
+                      On the day of your appointment, you can click the meeting link or wait for a call from the doctor for your online consultation or meet with your doctor whether at home or in office for in person visits and our friendly team will take care of the rest.
                     </p>
                   </div>
                 </div>
@@ -203,7 +229,7 @@ export default function HomePage() {
       </section>
 
       {/* Medical Equipment Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-blue-500 text-white">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -218,7 +244,7 @@ export default function HomePage() {
             </div>
 
             <div className="order-1 lg:order-2">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-8">
+              <h2 className="text-1xl sm:text-1xl lg:text-2xl font-light mb-9">
                 WE ARE ALSO A SUPPLIER OF MEDICAL EQUIPMENT
               </h2>
               <p className="text-lg">
@@ -228,7 +254,8 @@ export default function HomePage() {
                 diverse catalog includes everything from PPE (Personal Protective Equipment) to diagnostic tools,
                 ensuring that healthcare facilities are well-equipped to meet the needs of their patients. With MoLife, healthcare
                 providers can streamline their procurement process, access competitive pricing, and
-                benefit from reliable delivery services.
+                benefit from reliable delivery services. We are committed to supporting healthcare professionals every step of the way,
+                providing the supplies they need to deliver optimal care and improve patient outcomes.
               </p>
             </div>
           </div>
@@ -240,14 +267,14 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-2xl sm:text-3xl text-blue-600 mb-8">
-                TAKE CHARGE OF YOUR HEALTH
+              <h2 className="text-1xl sm:text-3xl text-blue-400 mb-8">
+                TAKE CHARGE OF<br></br> YOUR HEALTH
               </h2>
               <Image
-                src="/images/doctor.JPG"
+                src="/images/image4.PNG"
                 alt="Doctor consulting with patient"
-                width={600}
-                height={400}
+                width={900}
+                height={500}
                 className="w-full h-auto rounded-lg shadow-lg"
                 style={{ width: 'auto', height: 'auto' }}
               />
@@ -271,7 +298,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl text-blue-600 text-center mb-12">WHY JOIN US AS A CLIENT?</h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Card 1 */}
             <div className="bg-white p-6 rounded-lg text-center shadow-lg hover:shadow-xl transition-shadow">
               <div className="h-48 mb-4 overflow-hidden rounded-lg">
@@ -308,7 +335,7 @@ export default function HomePage() {
               <p className="text-sm">
                 At Molife Medical Services, we prioritize quality care above all else. Our team of experienced
                 healthcare professionals is dedicated to providing personalized and compassionate
-                care to each and every client.
+                care to each and every client. You can trust us to deliver the highest standard of care for you and your family.
               </p>
             </div>
 
@@ -350,7 +377,7 @@ export default function HomePage() {
                 We are committed to excellence in everything we do. From our state-
                 of-the-art facilities to our cutting-edge technology, we strive to
                 deliver the best possible healthcare experience for our
-                clients.
+                clients. When you choose Molife Medical Service, you can rest assured that you are in good hands.
               </p>
             </div>
           </div>
@@ -372,7 +399,7 @@ export default function HomePage() {
               </p>
               <div className="h-48 overflow-hidden rounded-lg">
                 <Image
-                  src="/images/doctor.JPG"
+                  src="https://img.freepik.com/premium-photo/african-woman-with-afro-smiling-looking-into-her-laptop-computer-her-desk-white-office_220770-14999.jpg"
                   alt="Work-life balance"
                   width={400}
                   height={200}
@@ -389,8 +416,15 @@ export default function HomePage() {
                 leverage cutting-edge technology and modern practices to enhance patient care and streamline
                 workflows, allowing you to practice medicine more efficiently and effectively.
               </p>
-              <div className="h-48 overflow-hidden rounded-lg bg-blue-100 flex items-center justify-center">
-                <span className="text-6xl">💡</span>
+              <div className="h-48 overflow-hidden rounded-lg">
+                <Image
+                  src="https://cdn.pixabay.com/photo/2016/11/21/18/20/bright-1847006__340.jpg"
+                  alt="Work-life balance"
+                  width={400}
+                  height={200}
+                  className="w-full h-full object-cover"
+                  style={{ width: 'auto', height: 'auto' }}
+                />
               </div>
             </div>
 

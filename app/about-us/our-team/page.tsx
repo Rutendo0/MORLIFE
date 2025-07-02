@@ -1,5 +1,6 @@
-
+"use client"
 import Header from "@/components/header"
+import { Link } from "lucide-react"
 import Image from "next/image"
 
 export default function OurTeamPage() {

@@ -18,9 +18,6 @@ function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-8">
-          <Link href="/new-page" className="text-white hover:text-blue-100 transition-colors">
-            New Page
-          </Link>
           <Link href="/" className="text-white hover:text-blue-100 transition-colors">
             Home
           </Link>
@@ -103,13 +100,6 @@ function Header() {
           <div className="flex flex-col space-y-3 pt-4 relative">
             {/* Main Menu */}
             <div className={`${activeSubmenu ? 'hidden' : 'block'}`}>
-              <Link 
-                href="/new-page" 
-                className="text-white hover:text-blue-100 transition-colors py-3 px-4 rounded-md hover:bg-blue-500/20 touch-manipulation block"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                New Page
-              </Link>
               <Link 
                 href="/" 
                 className="text-white hover:text-blue-100 transition-colors py-3 px-4 rounded-md hover:bg-blue-500/20 touch-manipulation block"

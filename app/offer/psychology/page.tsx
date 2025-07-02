@@ -9,29 +9,27 @@ export default function PsychologyPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-b from-blue-50 to-white">
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="relative">
-            <Image
-              src="https://www.shutterstock.com/image-photo/doctor-patient-600nw-524000074.jpg"
-              alt="Psychology consultation session"
-              width={1200}
-              height={400}
-              className="w-full h-80 object-cover rounded-lg"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white text-center">
-                PSYCHOLOGICAL SERVICES
-              </h1>
-            </div>
-          </div>
-        </div>
-      </section>
+       <section
+  className="relative h-[80vh] bg-cover bg-center"
+  style={{
+    backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('http://www.mapef.org/wp-content/uploads/2020/11/GettyImages-1207514166.jpg')",
+  }}
+>
+  <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
+  <div className="relative z-10 flex items-center justify-center h-full">
+    <div className="text-center text-white">
+      <h1 className="text-4xl md:text-6xl font-light mb-4 tracking-wide">
+        PSYCHOLOGISTS.
+      </h1>
+      <div className="w-16 h-1 bg-white mx-auto"></div>
+    </div>
+  </div>
+</section>
 
       <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-16">
         <div className="text-center mb-12">
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Professional mental health support with compassionate care and evidence-based treatments
+          <p className="text-lg text-blue-600 max-w-3xl mx-auto">
+            YOUR MENTAL HEALTH IS JUST AS IMPORTANT AS YOUR PHYSICAL HEALTH, NEVER LET SOCIAL TABOOS STOP YOU FROM RECEIVING THE MUCH NEEDED SUPPORT YOU NEED.MOLIFE IS HERE TO HELP YOU, NOT TO JUDGE
           </p>
         </div>
 
@@ -44,7 +42,7 @@ export default function PsychologyPage() {
             {/* Individual Counseling */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="https://www.digitalpharmacist.com/wp-content/uploads/2020/09/dreamstime_l_135110090.jpg"
+                src="/images/image12.png"
                 alt="Individual counseling session"
                 width={400}
                 height={250}
@@ -61,16 +59,16 @@ export default function PsychologyPage() {
             {/* Group Therapy */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="https://www.shelterfirstresponder.com/wp-content/uploads/2020/03/coronavirus-field-hospital.jpg"
+                 src="/images/image13.png"
                 alt="Group therapy session"
                 width={400}
                 height={250}
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-blue-600">GROUP THERAPY</h3>
+                <h3 className="text-xl font-semibold mb-4 text-blue-600">ADDICTION COUNSELING</h3>
                 <p className="text-gray-700">
-                  Facilitated group sessions where individuals with similar challenges can share experiences and support each other under professional guidance.
+                 Providing support and therapy for individuals struggling with substance abuse or addiction to achive recovery and maintain sobriety.
                 </p>
               </div>
             </div>
@@ -78,7 +76,7 @@ export default function PsychologyPage() {
             {/* Couples Counseling */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image3.png"
+                src="/images/image14.png"
                 alt="Couples counseling session"
                 width={400}
                 height={250}
@@ -87,7 +85,7 @@ export default function PsychologyPage() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">COUPLES COUNSELING</h3>
                 <p className="text-gray-700">
-                  Specialized therapy for couples to improve communication, resolve conflicts, and strengthen their relationship.
+                 Offering therapy sessions for couples to address relationship, improve communication and enhance intimacy.
                 </p>
               </div>
             </div>
@@ -98,7 +96,7 @@ export default function PsychologyPage() {
             {/* Family Therapy */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image2.png"
+                src="/images/image15.png"
                 alt="Family therapy session"
                 width={400}
                 height={250}
@@ -115,16 +113,16 @@ export default function PsychologyPage() {
             {/* Psychiatric Services */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image1.png"
+                src="/images/image16.png"
                 alt="Psychiatric consultation"
                 width={400}
                 height={250}
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-blue-600">PSYCHIATRIC SERVICES</h3>
+                <h3 className="text-xl font-semibold mb-4 text-blue-600">GROUP THERAPY</h3>
                 <p className="text-gray-700">
-                  Medical evaluation, diagnosis, and treatment of mental health disorders, including medication management when necessary.
+                  Offering therapy sessions in a group setting where individuals can share experiences, receive support and learn coping skills from one another.
                 </p>
               </div>
             </div>
@@ -132,65 +130,18 @@ export default function PsychologyPage() {
             {/* Crisis Intervention */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="https://thumbs.dreamstime.com/b/bottle-pills-18402018.jpg"
+                src="/images/image17.png"
                 alt="Crisis intervention support"
                 width={400}
                 height={250}
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-blue-600">CRISIS INTERVENTION</h3>
+                <h3 className="text-xl font-semibold mb-4 text-blue-600">ANGER MANAGEMENT</h3>
                 <p className="text-gray-700">
-                  Immediate support and intervention services for individuals experiencing mental health crises or emotional emergencies.
+                 Providing counseling and support to help individuals understand and manage their anger in constructive ways.
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose Our Psychology Services */}
-        <section className="mb-16 bg-blue-50 p-8 rounded-lg">
-          <h2 className="text-2xl sm:text-3xl text-blue-600 text-center mb-8">WHY CHOOSE MOLIFE PSYCHOLOGY SERVICES?</h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">👥</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-blue-600">LICENSED PROFESSIONALS</h3>
-              <p className="text-gray-600 text-sm">
-                All our psychologists are licensed and experienced in providing quality mental health care.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🏠</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-blue-600">FLEXIBLE OPTIONS</h3>
-              <p className="text-gray-600 text-sm">
-                Choose from in-person, online, or phone consultations based on your comfort and needs.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🔒</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-blue-600">CONFIDENTIAL & SECURE</h3>
-              <p className="text-gray-600 text-sm">
-                All sessions are completely confidential and conducted in a secure environment.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🎯</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-blue-600">PERSONALIZED CARE</h3>
-              <p className="text-gray-600 text-sm">
-                Treatment plans tailored to your specific needs and mental health goals.
-              </p>
             </div>
           </div>
         </section>
