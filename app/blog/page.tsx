@@ -9,56 +9,56 @@ export default function BlogPage() {
       id: 1,
       date: "6/9/24",
       title: "UNDERSTANDING ANXIETY: EFFECTS, IDENTIFICATION, AND SCIENTIFICALLY PROVEN METHODS TO ALLEVIATE IT",
-      image: "/images/anxiety-post.jpg",
+      image: "/images/image23.png",
       slug: "understanding-anxiety"
     },
     {
       id: 2,
       date: "4/1/24",
       title: "EFFECTIVE STRATEGIES FOR TREATING LOWER BACK PAIN",
-      image: "/images/back-pain.jpg",
+      image: "/images/image24.png",
       slug: "treating-lower-back-pain"
     },
     {
       id: 3,
       date: "3/24/24",
       title: "UNDERSTANDING SCHIZOPHRENIA: SYMPTOMS, TREATMENTS, AND INSIGHTS",
-      image: "/images/schizophrenia.jpg",
+      image: "/images/image25.png",
       slug: "understanding-schizophrenia"
     },
     {
       id: 4,
       date: "3/24/24",
       title: "PROVEN STRATEGIES FOR ENHANCING SLEEP QUALITY AND RESTORATION",
-      image: "/images/sleep-quality.jpg",
+      image: "/images/image26.png",
       slug: "enhancing-sleep-quality"
     },
     {
       id: 5,
       date: "3/24/24",
       title: "MASTERING FIRST AID BASICS: ESSENTIAL SKILLS FOR HANDLING EMERGENCIES",
-      image: "/images/first-aid.jpg",
+      image: "/images/image27.png",
       slug: "first-aid-basics"
     },
     {
       id: 6,
       date: "3/23/24",
       title: "PRIORITIZING WOMEN'S HEALTH: EVIDENCE-BASED PREVENTATIVE CARE AND SCREENINGS IN AFRICA",
-      image: "/images/womens-health.jpg",
+      image: "/images/image28.png",
       slug: "womens-health-africa"
     },
     {
       id: 7,
       date: "3/23/24",
       title: "ESSENTIAL TIPS FOR MAINTAINING WELLNESS IN LATER LIFE",
-      image: "/images/later-life-wellness.jpg",
+      image: "/images/image29.png",
       slug: "wellness-later-life"
     },
     {
       id: 8,
       date: "3/23/24",
       title: "NAVIGATING THE STORM: PRACTICAL STRATEGIES FOR COPING WITH STRESS AND ANXIETY",
-      image: "/images/stress-anxiety.jpg",
+      image: "/images/image30.png",
       slug: "coping-stress-anxiety"
     }
   ]

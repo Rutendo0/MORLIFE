@@ -9,14 +9,7 @@ export default function OurTeamPage() {
       <Header />
 
       <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-16">
-        <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-light text-blue-600 mb-6">
-            OUR TEAM
-          </h1>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Meet our dedicated team of healthcare professionals committed to providing exceptional care and service.
-          </p>
-        </div>
+       
 
         {/* Team Members Grid */}
         <section className="grid gap-16">
@@ -28,7 +21,7 @@ export default function OurTeamPage() {
             <div className="text-center">
               <div className="bg-gray-100 rounded-lg p-8 mb-6">
                 <Image
-                  src="/images/doctor.JPG"
+                  src="/images/image18.png"
                   alt="Tadiwa Chisango"
                   width={300}
                   height={400}
@@ -38,7 +31,7 @@ export default function OurTeamPage() {
               <h3 className="text-2xl font-bold mb-2 text-gray-800">TADIWA CHISANGO</h3>
               <h4 className="text-lg font-semibold mb-4 text-blue-600">MANAGING DIRECTOR</h4>
               <p className="text-gray-700 leading-relaxed">
-                Miss Chisango is an accomplished professional with extensive experience in customer-facing roles and a diploma in First-Aid. With a proven track record of success, she brings a wealth of expertise in engaging with clients and delivering exceptional service. Her background in customer relations has equipped her with strong communication, interpersonal, and problem-solving skills. Throughout her career, Tadiwa has demonstrated a deep commitment to meeting customer needs and fostering positive relationships. Her dedication to excellence and her ability to effectively address diverse customer preferences make her a valuable asset in any customer-centric setting.
+               Miss Chisango is an accomplished professional with extensive experience in customer-facing roles and a diploma in First-Aid. With a proven track record of success, she brings a wealth of expertise in engaging with clients and delivering exceptional service. Her background in customer relations has equipped her with strong communication, interpersonal, and problem-solving skills. Throughout her career, Tadiwa has demonstrated a deep commitment to meeting customer needs and fostering positive relationships. Her dedication to excellence and her ability to effectively address diverse customer preferences make her a valuable asset in any customer-centric setting..
               </p>
             </div>
 
@@ -46,7 +39,7 @@ export default function OurTeamPage() {
             <div className="text-center">
               <div className="bg-gray-100 rounded-lg p-8 mb-6">
                 <Image
-                  src="/images/doctor.JPG"
+                  src="/images/image19.png"
                   alt="Mazvita Mwayera"
                   width={300}
                   height={400}
@@ -69,7 +62,7 @@ export default function OurTeamPage() {
             <div className="text-center">
               <div className="bg-gray-100 rounded-lg p-8 mb-6">
                 <Image
-                  src="/images/doctor.JPG"
+                  src="/images/image20.png"
                   alt="Dr Michelle Chilumbiri"
                   width={300}
                   height={400}
@@ -87,7 +80,7 @@ export default function OurTeamPage() {
             <div className="text-center">
               <div className="bg-gray-100 rounded-lg p-8 mb-6">
                 <Image
-                  src="/images/doctor.JPG"
+                  src="/images/image21.png"
                   alt="Dr Jessie Chilumbiri"
                   width={300}
                   height={400}
@@ -107,7 +100,7 @@ export default function OurTeamPage() {
             <div className="text-center max-w-md">
               <div className="bg-gray-100 rounded-lg p-8 mb-6">
                 <Image
-                  src="/images/doctor.JPG"
+                  src="/images/image22.png"
                   alt="Dr Faith Masanganise"
                   width={300}
                   height={400}

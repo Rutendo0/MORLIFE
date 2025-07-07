@@ -20,7 +20,7 @@ export default function UnderstandingAnxietyPage() {
         <div className="flex justify-center mb-12">
           <div className="w-full max-w-2xl">
             <Image
-              src="/images/anxiety-post.jpg"
+              src="/images/image23.png"
               alt="Anxiety illustration"
               width={600}
               height={400}
@@ -34,7 +34,7 @@ export default function UnderstandingAnxietyPage() {
           {/* Introduction */}
           <section className="text-center">
             <p className="text-lg text-gray-700 leading-relaxed">
-              <strong>Introduction:</strong> Anxiety is one of the most common mental health conditions affecting millions worldwide. Understanding its effects, recognizing its symptoms, and knowing evidence-based treatment methods can significantly improve quality of life for those experiencing anxiety disorders.
+              <strong>Introduction:</strong> Anxiety is a prevalent mental health condition affecting millions of people worldwide. Characterized by excessive worry, fear, and nervousness, it can significantly impact daily life. Understanding the effects of anxiety and identifying it in oneself or others is crucial for seeking and providing the right support. This article delves into the effects of anxiety, how to recognize it, and scientifically proven methods to alleviate it..
             </p>
           </section>
 
