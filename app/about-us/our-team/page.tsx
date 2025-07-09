@@ -21,7 +21,7 @@ export default function OurTeamPage() {
             <div className="text-center">
               <div className="bg-gray-100 rounded-lg p-8 mb-6">
                 <Image
-                  src="/images/image18.png"
+                  src="/images/image18.jpeg"
                   alt="Tadiwa Chisango"
                   width={300}
                   height={400}

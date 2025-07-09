@@ -9,56 +9,56 @@ export default function BlogPage() {
       id: 1,
       date: "6/9/24",
       title: "UNDERSTANDING ANXIETY: EFFECTS, IDENTIFICATION, AND SCIENTIFICALLY PROVEN METHODS TO ALLEVIATE IT",
-      image: "/images/image23.png",
+      image: "/images/image23.jpg",
       slug: "understanding-anxiety"
     },
     {
       id: 2,
       date: "4/1/24",
       title: "EFFECTIVE STRATEGIES FOR TREATING LOWER BACK PAIN",
-      image: "/images/image24.png",
+      image: "/images/image24.jpg",
       slug: "treating-lower-back-pain"
     },
     {
       id: 3,
       date: "3/24/24",
       title: "UNDERSTANDING SCHIZOPHRENIA: SYMPTOMS, TREATMENTS, AND INSIGHTS",
-      image: "/images/image25.png",
+      image: "/images/image25.jpg",
       slug: "understanding-schizophrenia"
     },
     {
       id: 4,
       date: "3/24/24",
       title: "PROVEN STRATEGIES FOR ENHANCING SLEEP QUALITY AND RESTORATION",
-      image: "/images/image26.png",
+      image: "/images/image26.jpg",
       slug: "enhancing-sleep-quality"
     },
     {
       id: 5,
       date: "3/24/24",
       title: "MASTERING FIRST AID BASICS: ESSENTIAL SKILLS FOR HANDLING EMERGENCIES",
-      image: "/images/image27.png",
+      image: "/images/image27.jpg",
       slug: "first-aid-basics"
     },
     {
       id: 6,
       date: "3/23/24",
       title: "PRIORITIZING WOMEN'S HEALTH: EVIDENCE-BASED PREVENTATIVE CARE AND SCREENINGS IN AFRICA",
-      image: "/images/image28.png",
+      image: "/images/image28.jpg",
       slug: "womens-health-africa"
     },
     {
       id: 7,
       date: "3/23/24",
       title: "ESSENTIAL TIPS FOR MAINTAINING WELLNESS IN LATER LIFE",
-      image: "/images/image29.png",
+      image: "/images/image29.jpeg",
       slug: "wellness-later-life"
     },
     {
       id: 8,
       date: "3/23/24",
       title: "NAVIGATING THE STORM: PRACTICAL STRATEGIES FOR COPING WITH STRESS AND ANXIETY",
-      image: "/images/image30.png",
+      image: "/images/image30.jpeg",
       slug: "coping-stress-anxiety"
     }
   ]

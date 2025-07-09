@@ -26,7 +26,7 @@ export default function HomePage() {
           <div className="flex justify-center px-4">
             <div className="w-full">
               <Image
-                src="/images/image1.png"
+                src="/images/image1.jpg"
                 alt="Healthcare professional"
                 width={1400}
                 height={800}
@@ -144,7 +144,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="/images/image2.png"
+                src="/images/image2.jpeg"
                 alt="How to book a consultation"
                 width={600}
                 height={600}
@@ -234,7 +234,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <Image
-                src="/images/image3.png"
+                src="/images/image3.jpeg"
                 alt="Medical equipment shipping containers"
                 width={600}
                 height={400}
@@ -271,7 +271,7 @@ export default function HomePage() {
                 TAKE CHARGE OF<br></br> YOUR HEALTH
               </h2>
               <Image
-                src="/images/image4.PNG"
+                src="/images/image4.jpg"
                 alt="Doctor consulting with patient"
                 width={900}
                 height={500}
@@ -450,7 +450,7 @@ export default function HomePage() {
             <div>
               <div className="bg-white rounded-lg p-4 shadow-lg">
                 <Image
-                  src="/images/image1.png"
+                  src="/images/image1.jpg"
                   alt="Harare location map"
                   width={600}
                   height={400}

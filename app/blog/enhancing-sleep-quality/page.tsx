@@ -18,7 +18,7 @@ export default function EnhancingSleepQualityPage() {
         <div className="flex justify-center mb-12">
           <div className="w-full max-w-2xl">
             <Image
-              src="/images/sleep-quality.jpg"
+              src="/images/image26.jpg"
               alt="Sleep quality illustration"
               width={600}
               height={400}
@@ -31,203 +31,97 @@ export default function EnhancingSleepQualityPage() {
         <article className="max-w-4xl mx-auto space-y-12">
           <section className="text-center">
             <p className="text-lg text-gray-700 leading-relaxed">
-              <strong>Introduction:</strong> Quality sleep is fundamental to physical health, mental well-being, and overall quality of life. Poor sleep affects millions worldwide, impacting everything from immune function to cognitive performance. This article explores evidence-based strategies to improve sleep quality and achieve better restoration.
+              <strong>Introduction:</strong> Sleep is the cornerstone of optimal health and well-being, yet many of us struggle to achieve restful and rejuvenating slumber. Fortunately, there are evidence-based strategies that can help improve sleep quality, allowing you to wake up feeling refreshed and revitalized. In this comprehensive guide, we'll explore actionable tips supported by medical research to enhance your sleep quality and promote better rest and recovery.
             </p>
           </section>
 
           <section className="bg-blue-50 p-8 rounded-lg">
-            <h2 className="text-xl font-semibold text-blue-600 mb-4">The Importance of Sleep</h2>
+
+            <div className="flex justify-center mb-8">
+                          <Image
+                            src="/images/image43.jpg"
+                            alt="Ergonomic workspace setup"
+                            width={500}
+                            height={300}
+                            className="rounded-lg shadow-lg"
+                          />
+                        </div>
+            <h2 className="text-xl font-semibold text-gray-600 mb-4">1. Establish a Consistent Sleep Schedule:</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Sleep plays a crucial role in physical health, brain function, and emotional well-being. During sleep, our bodies repair tissues, consolidate memories, and release important hormones for growth and appetite regulation.
+              Research published in the Journal of Clinical Sleep Medicine highlights the importance of maintaining a regular sleep-wake cycle for optimal sleep quality.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Poor sleep quality can lead to various health issues including cardiovascular disease, diabetes, weakened immune system, weight gain, and mental health disorders such as depression and anxiety.
+             Aim to go to bed and wake up at the same time every day, even on weekends, to regulate your body's internal clock and promote better sleep continuity.
             </p>
-          </section>
 
-          {/* Sleep Stages */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Understanding Sleep Stages</h2>
-            <div className="space-y-4">
-              <div className="border-l-4 border-blue-500 pl-4">
-                <h3 className="font-semibold text-gray-800">NREM Stage 1 (Light Sleep)</h3>
-                <p className="text-gray-700">Transition from wakefulness to sleep. Easily awakened during this stage.</p>
-              </div>
-              <div className="border-l-4 border-blue-500 pl-4">
-                <h3 className="font-semibold text-gray-800">NREM Stage 2 (True Sleep)</h3>
-                <p className="text-gray-700">Brain waves slow down, body temperature drops, heart rate decreases.</p>
-              </div>
-              <div className="border-l-4 border-blue-500 pl-4">
-                <h3 className="font-semibold text-gray-800">NREM Stage 3 (Deep Sleep)</h3>
-                <p className="text-gray-700">Most restorative stage. Physical repair, immune system strengthening occurs.</p>
-              </div>
-              <div className="border-l-4 border-blue-500 pl-4">
-                <h3 className="font-semibold text-gray-800">REM Sleep</h3>
-                <p className="text-gray-700">Brain activity increases, dreaming occurs, memory consolidation happens.</p>
-              </div>
-            </div>
-          </section>
+            <h2 className="text-xl font-semibold text-gray-600 mb-4">2.Create a Relaxing Bedtime Routine:</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Engaging in relaxing activities before bedtime can signal to your body that it's time to wind down and prepare for sleep.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+             Consider incorporating practices such as gentle stretching, meditation, or reading a book into your bedtime routine to promote relaxation and reduce stress levels.
+            </p>
 
-          {/* Sleep Hygiene */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-6">Sleep Hygiene: Foundation for Better Sleep</h2>
-            
-            <div className="space-y-6">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-gray-800 mb-2">1. Maintain a Consistent Sleep Schedule</h3>
-                <p className="text-gray-700 mb-3">
-                  Go to bed and wake up at the same time every day, even on weekends. This helps regulate your body's internal clock.
-                </p>
-                <ul className="text-gray-700 space-y-1 text-sm">
-                  <li>• Set a regular bedtime and stick to it</li>
-                  <li>• Avoid sleeping in, even after poor sleep</li>
-                  <li>• Use light exposure to reinforce your schedule</li>
-                </ul>
-              </div>
+             <h2 className="text-xl font-semibold text-gray-600 mb-4">3.Optimize Your Sleep Environment:</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Your sleep environment plays a significant role in determining the quality of your sleep.Research published in Sleep Health emphasizes the importance of creating a comfortable and conducive sleep environment. 
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+             Keep your bedroom cool, dark, and quiet, and invest in a comfortable mattress and pillows to support proper sleep posture and alignment.
+            </p>
 
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-gray-800 mb-2">2. Create an Optimal Sleep Environment</h3>
-                <p className="text-gray-700 mb-3">
-                  Your bedroom should be a sanctuary for sleep - cool, dark, and quiet.
-                </p>
-                <ul className="text-gray-700 space-y-1 text-sm">
-                  <li>• Keep temperature between 60-67°F (15-19°C)</li>
-                  <li>• Use blackout curtains or eye masks</li>
-                  <li>• Minimize noise with earplugs or white noise</li>
-                  <li>• Invest in a comfortable mattress and pillows</li>
-                </ul>
-              </div>
+            <h2 className="text-xl font-semibold text-gray-600 mb-4">4.Limit Exposure to Blue Light Before Bed:</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+             Exposure to blue light from electronic devices such as smartphones, tablets, and computers can disrupt your body's natural sleep-wake cycle.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+            Research published in the Journal of Biological Rhythms suggests that minimizing blue light exposure in the evening can improve sleep quality and duration.
+            </p>
+            <p className="text-gray-700 leading-relaxed ">
+              Consider using blue light filters or wearing blue light-blocking glasses in the hours leading up to bedtime to mitigate its effects on sleep.
+            </p>
 
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-gray-800 mb-2">3. Develop a Pre-Sleep Routine</h3>
-                <p className="text-gray-700 mb-3">
-                  A relaxing bedtime routine signals to your body that it's time to wind down.
-                </p>
-                <ul className="text-gray-700 space-y-1 text-sm">
-                  <li>• Start routine 30-60 minutes before bed</li>
-                  <li>• Include calming activities like reading or gentle stretching</li>
-                  <li>• Avoid stimulating activities and bright screens</li>
-                  <li>• Consider relaxation techniques like meditation</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+            <h2 className="text-xl font-semibold text-gray-600 mb-4">5.Watch Your Diet and Hydration:</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+             What you eat and drink can impact your sleep quality. Research published in Nutrients suggests that certain foods and beverages can either promote or hinder sleep.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+            Avoid heavy meals, caffeine, and alcohol close to bedtime, as they can disrupt sleep patterns and interfere with restorative sleep.
+            </p>
 
-          {/* Lifestyle Factors */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Lifestyle Factors That Affect Sleep</h2>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="font-semibold text-blue-600 mb-3">Diet and Sleep</h3>
-                <ul className="text-gray-700 space-y-2 text-sm">
-                  <li>• Avoid large meals 2-3 hours before bed</li>
-                  <li>• Limit caffeine after 2 PM</li>
-                  <li>• Avoid alcohol before bedtime</li>
-                  <li>• Consider foods rich in tryptophan and magnesium</li>
-                  <li>• Stay hydrated, but not right before bed</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold text-blue-600 mb-3">Exercise and Sleep</h3>
-                <ul className="text-gray-700 space-y-2 text-sm">
-                  <li>• Regular exercise improves sleep quality</li>
-                  <li>• Avoid vigorous exercise 3 hours before bed</li>
-                  <li>• Morning or afternoon workouts are ideal</li>
-                  <li>• Even light exercise can be beneficial</li>
-                  <li>• Consistency is more important than intensity</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Technology and Sleep */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Managing Technology for Better Sleep</h2>
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Blue light from screens can interfere with your body's production of melatonin, the hormone that regulates sleep-wake cycles.
+             <h2 className="text-xl font-semibold text-gray-600 mb-4">6. Manage Stress and Anxiety:</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+             Chronic stress and anxiety can take a toll on sleep quality and duration. Research published in Sleep Medicine Reviews highlights the bidirectional relationship between stress and sleep.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+            Practice stress-reduction techniques such as deep breathing exercises, mindfulness meditation, or progressive muscle relaxation to promote relaxation and improve sleep quality. 
               </p>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Screen Time Guidelines</h4>
-                  <ul className="text-gray-700 space-y-1 text-sm">
-                    <li>• Avoid screens 1 hour before bed</li>
-                    <li>• Use blue light filters in the evening</li>
-                    <li>• Keep devices out of the bedroom</li>
-                    <li>• Use airplane mode if phone must be nearby</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Alternatives to Screen Time</h4>
-                  <ul className="text-gray-700 space-y-1 text-sm">
-                    <li>• Read a physical book</li>
-                    <li>• Practice gentle yoga or stretching</li>
-                    <li>• Listen to calming music or podcasts</li>
-                    <li>• Write in a journal</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
 
-          {/* Sleep Disorders */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Common Sleep Disorders</h2>
-            <p className="text-gray-700 mb-4">
-              If you consistently follow good sleep hygiene but still experience poor sleep, you may have a sleep disorder that requires medical attention.
+               <h2 className="text-xl font-semibold text-gray-600 mb-4">7. Seek Professional Help if Needed:</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+             If you continue to experience persistent sleep problems despite implementing these strategies, consider seeking guidance from a healthcare professional or sleep specialist.
             </p>
-            <div className="space-y-4">
-              <div className="border border-gray-200 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-800">Sleep Apnea</h3>
-                <p className="text-gray-700 text-sm">Breathing repeatedly stops and starts during sleep, often accompanied by loud snoring.</p>
-              </div>
-              <div className="border border-gray-200 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-800">Insomnia</h3>
-                <p className="text-gray-700 text-sm">Difficulty falling asleep, staying asleep, or waking up too early.</p>
-              </div>
-              <div className="border border-gray-200 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-800">Restless Leg Syndrome</h3>
-                <p className="text-gray-700 text-sm">Uncomfortable sensations in the legs that create an urge to move them.</p>
-              </div>
-            </div>
-          </section>
+            <p className="text-gray-700 leading-relaxed">
+           Medical interventions such as cognitive-behavioral therapy for insomnia (CBT-I) or pharmacotherapy may be recommended based on your individual needs and circumstances.
+              </p>
+            
 
-          {/* Natural Sleep Aids */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Natural Sleep Enhancement Techniques</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div>
-                  <h3 className="font-semibold text-blue-600 mb-2">Relaxation Techniques</h3>
-                  <ul className="text-gray-700 space-y-1 text-sm">
-                    <li>• Progressive muscle relaxation</li>
-                    <li>• Deep breathing exercises</li>
-                    <li>• Meditation and mindfulness</li>
-                    <li>• Visualization techniques</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div>
-                  <h3 className="font-semibold text-blue-600 mb-2">Natural Supplements</h3>
-                  <ul className="text-gray-700 space-y-1 text-sm">
-                    <li>• Melatonin (consult healthcare provider)</li>
-                    <li>• Magnesium</li>
-                    <li>• Chamomile tea</li>
-                    <li>• Valerian root</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
+             <div className="flex justify-center mb-8">
+                          <Image
+                            src="/images/image44.png"
+                            alt="Ergonomic workspace setup"
+                            width={500}
+                            height={300}
+                            className="rounded-lg shadow-lg"
+                          />
+                        </div>
+             </section>
 
           {/* Conclusion */}
           <section className="bg-blue-50 p-8 rounded-lg">
             <h2 className="text-xl font-semibold text-blue-600 mb-4">Conclusion</h2>
             <p className="text-gray-700 leading-relaxed">
-              Improving sleep quality requires a comprehensive approach that includes good sleep hygiene, lifestyle modifications, and creating an optimal sleep environment. While it may take time to see improvements, consistently applying these evidence-based strategies can significantly enhance your sleep quality and overall health. If sleep problems persist despite these efforts, consult with a healthcare provider to rule out underlying sleep disorders.
+              Improving sleep quality is essential for overall health and well-being. By implementing these evidence-based strategies, you can create an environment conducive to restful and restorative sleep, allowing you to wake up feeling refreshed, energized, and ready to tackle the day ahead. Prioritize your sleep, and reap the benefits of better rest and recovery for a healthier, happier life.
             </p>
           </section>
         </article>

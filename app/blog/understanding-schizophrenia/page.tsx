@@ -20,7 +20,7 @@ export default function UnderstandingSchizophreniaPage() {
         <div className="flex justify-center mb-12">
           <div className="w-full max-w-2xl">
             <Image
-              src="/images/schizophrenia.jpg"
+              src="/images/image36.jpeg"
               alt="Schizophrenia awareness illustration"
               width={600}
               height={400}
@@ -35,19 +35,18 @@ export default function UnderstandingSchizophreniaPage() {
           {/* Introduction */}
           <section className="text-center">
             <p className="text-lg text-gray-700 leading-relaxed">
-              <strong>Introduction:</strong> Schizophrenia is a complex mental health disorder that affects how a person thinks, feels, and behaves. Understanding this condition, its symptoms, and available treatments is crucial for reducing stigma and supporting those affected by it.
+              <strong>Introduction:</strong> Schizophrenia is a complex and often debilitating mental disorder that affects approximately 20 million people worldwide. Despite its prevalence, there remains significant stigma and misunderstanding surrounding this condition. In this article, we'll delve into the symptoms, treatments, and insights gleaned from research to provide a comprehensive understanding of schizophrenia.
             </p>
-          </section>
 
-          {/* Understanding Schizophrenia */}
-          <section className="bg-blue-50 p-8 rounded-lg">
-            <h2 className="text-xl font-semibold text-blue-600 mb-4">Understanding Schizophrenia</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Schizophrenia is a chronic brain disorder that affects less than one percent of the global population. It typically emerges in late adolescence or early adulthood and can significantly impact a person's ability to think clearly, manage emotions, and relate to others.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              Contrary to popular misconceptions, schizophrenia is not about having multiple personalities. Instead, it involves a range of cognitive, behavioral, and emotional symptoms that can vary greatly between individuals.
-            </p>
+            <div className="flex justify-center mb-8">
+                          <Image
+                            src="/images/image25.jpg"
+                            alt="Ergonomic workspace setup"
+                            width={500}
+                            height={300}
+                            className="rounded-lg shadow-lg"
+                          />
+                        </div>
           </section>
 
           {/* Symptoms */}
@@ -56,29 +55,17 @@ export default function UnderstandingSchizophreniaPage() {
             
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-semibold text-blue-600 mb-3">Positive Symptoms (Added experiences)</h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="border-l-4 border-blue-500 pl-4">
-                    <h4 className="font-semibold text-gray-800">Hallucinations</h4>
-                    <p className="text-gray-700 text-sm">Seeing, hearing, or feeling things that aren't there. Auditory hallucinations are most common.</p>
-                  </div>
-                  <div className="border-l-4 border-blue-500 pl-4">
-                    <h4 className="font-semibold text-gray-800">Delusions</h4>
-                    <p className="text-gray-700 text-sm">Fixed false beliefs that are not based in reality, such as paranoid or grandiose thoughts.</p>
-                  </div>
+                <h3 className="text-lg font-semibold text-blue-600 mb-3">Positive Symptoms</h3>
+                <p>These symptoms involve distortions of normal functioning and include hallucinations (e.g., hearing voices), delusions (e.g., false beliefs), disorganized speech, and disorganized behavior..</p>
+                <div className=" gap-4">
                 </div>
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-blue-600 mb-3">Negative Symptoms (Reduced experiences)</h3>
+                <h3 className="text-lg font-semibold text-blue-600 mb-3">Negative Symptoms</h3>
                 <div className="grid md:grid-cols-2 gap-4">
-                  <div className="border-l-4 border-gray-400 pl-4">
-                    <h4 className="font-semibold text-gray-800">Reduced Emotional Expression</h4>
-                    <p className="text-gray-700 text-sm">Difficulty expressing emotions through facial expressions, voice tone, or gestures.</p>
-                  </div>
-                  <div className="border-l-4 border-gray-400 pl-4">
-                    <h4 className="font-semibold text-gray-800">Avolition</h4>
-                    <p className="text-gray-700 text-sm">Decreased motivation to initiate and perform self-directed purposeful activities.</p>
+                  <div className=" pl-4">
+                    <p className="text-gray-700 text-sm">Symptoms entail deficits in normal functioning and include reduced emotional expression, social withdrawal, anhedonia (loss of pleasure), and avolition (lack of motivation).</p>
                   </div>
                 </div>
               </div>
@@ -86,10 +73,7 @@ export default function UnderstandingSchizophreniaPage() {
               <div>
                 <h3 className="text-lg font-semibold text-blue-600 mb-3">Cognitive Symptoms</h3>
                 <ul className="list-disc list-inside text-gray-700 space-y-1">
-                  <li>Difficulty with attention and concentration</li>
-                  <li>Problems with working memory</li>
-                  <li>Impaired executive functioning</li>
-                  <li>Difficulty processing information</li>
+                  <li>symptoms involve impairments in cognitive processes such as attention, memory, and executive function, which can significantly impact daily functioning.</li>
                 </ul>
               </div>
             </div>
@@ -97,97 +81,123 @@ export default function UnderstandingSchizophreniaPage() {
 
           {/* Causes and Risk Factors */}
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Causes and Risk Factors</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">Insights from Research:</h2>
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-gray-700 leading-relaxed mb-4">
-                The exact cause of schizophrenia is unknown, but research suggests it results from a complex interaction of genetic, brain chemistry, and environmental factors:
+                Research has shed light on the underlying neurobiology of schizophrenia, implicating abnormalities in neurotransmitter systems, brain structure, and connectivity.
               </p>
-              <ul className="text-gray-700 space-y-2">
-                <li>• <strong>Genetics:</strong> Family history increases risk, but no single gene causes the disorder</li>
-                <li>• <strong>Brain chemistry:</strong> Imbalances in neurotransmitters like dopamine and glutamate</li>
-                <li>• <strong>Environmental factors:</strong> Prenatal exposure to viruses, malnutrition, or psychosocial stress</li>
-                <li>• <strong>Substance use:</strong> Cannabis and other drug use during adolescence may increase risk</li>
-              </ul>
+                 <div className="space-y-4">
+              <h2 className="text-xl font-semibold text-gray-900">1. Neurotransmitter Imbalance: </h2>
+              <p className="text-gray-700 leading-relaxed">
+                Dysregulation of dopamine, glutamate, and other neurotransmitter systems has been implicated in the pathophysiology of schizophrenia. Dopamine dysregulation, in particular, has been linked to the positive symptoms of psychosis.
+              </p>
+            </div> <div className="flex justify-center mb-8">
+              <Image
+              src="/images/image37.jpg"
+              alt="Ergonomic workspace setup"
+              width={500}
+              height={300}
+             className="rounded-lg shadow-lg"
+              />
+              </div>
+
+
+                <div className="space-y-4">
+              <h2 className="text-xl font-semibold text-gray-900">2. Brain Structure Abnormalities:  </h2>
+              <p className="text-gray-700 leading-relaxed">
+                Neuroimaging studies have revealed structural abnormalities in the brains of individuals with schizophrenia, including reduced gray matter volume, enlarged ventricles, and alterations in cortical thickness. These structural changes are thought to contribute to the cognitive deficits observed in schizophrenia.
+              </p>
+            </div><div className="flex justify-center mb-8">
+              <Image
+              src="/images/image38.jpeg"
+              alt="Ergonomic workspace setup"
+              width={500}
+              height={300}
+             className="rounded-lg shadow-lg"
+              />
+              </div>
+
+
+                <div className="space-y-4">
+              <h2 className="text-xl font-semibold text-gray-900">3. Genetic Factors:</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Family, twin, and molecular genetic studies have provided compelling evidence for the role of genetics in schizophrenia. While no single gene is responsible for schizophrenia, multiple genetic risk factors interact with environmental influences to increase susceptibility to the disorder.
+              </p>
+            </div><div className="flex justify-center mb-8">
+              <Image
+              src="/images/image39.jpeg"
+              alt="Ergonomic workspace setup"
+              width={500}
+              height={300}
+             className="rounded-lg shadow-lg"
+              />
+              </div>
+
+                <div className="space-y-4">
+              <h2 className="text-xl font-semibold text-gray-900">4. Environmental Risk Factors:</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Prenatal and perinatal factors, such as maternal infection, malnutrition, and obstetric complications, have been associated with an increased risk of schizophrenia. Additionally, early-life stressors, urban upbringing, and cannabis use during adolescence have been identified as environmental risk factors.
+              </p>
+            </div><div className="flex justify-center mb-8">
+              <Image
+              src="/images/image40.jpg"
+              alt="Ergonomic workspace setup"
+              width={500}
+              height={300}
+             className="rounded-lg shadow-lg"
+              />
+              </div>
             </div>
           </section>
 
           {/* Treatment Options */}
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-6">Treatment Approaches</h2>
-            
-            <div className="space-y-6">
+            <p>Treatment for schizophrenia typically involves a combination of pharmacotherapy, psychosocial interventions, and supportive care.</p>
               <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-blue-600 mb-2">1. Antipsychotic Medications</h3>
+
+                <div className="space-y-6">
+<div className="flex justify-center mb-8">
+              <Image
+              src="/images/image41.jpg"
+              alt="Ergonomic workspace setup"
+              width={500}
+              height={300}
+             className="rounded-lg shadow-lg"
+              />
+              </div>
+                <h3 className="font-semibold text-blue-600 mb-2">1. Antipsychotic Medications :</h3>
                 <p className="text-gray-700">
-                  The primary treatment for schizophrenia. These medications help manage symptoms by affecting neurotransmitter activity in the brain. Both typical and atypical antipsychotics are available.
+                  Psychosocial interventions. Antipsychotic medications, which act primarily by blocking dopamine receptors, are the cornerstone of pharmacological treatment for schizophrenia. Examples of antipsychotic medications include:
                 </p>
+                <li>First-generation antipsychotics (e.g., haloperidol, chlorpromazine): These medications are effective at reducing positive symptoms but are associated with a higher risk of extrapyramidal side effects, such as stiffness, tremors, and involuntary movements.</li>
+              <li>Second-generation antipsychotics (e.g., risperidone, olanzapine, clozapine): Second-generation antipsychotics are often preferred due to their reduced risk of extrapyramidal side effects. They are also effective at treating both positive and negative symptoms of schizophrenia.</li>
               </div>
 
               <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-blue-600 mb-2">2. Psychosocial Interventions</h3>
+<div className="flex justify-center mb-8">
+              <Image
+              src="/images/image42.jpg"
+              alt="Ergonomic workspace setup"
+              width={500}
+              height={300}
+             className="rounded-lg shadow-lg"
+              />
+              </div>
+
+                <h3 className="font-semibold text-blue-600 mb-2">2. Psychosocial Interventions: </h3>
                 <p className="text-gray-700 mb-3">
-                  Various therapy approaches that complement medication:
-                </p>
-                <ul className="text-gray-700 space-y-1">
-                  <li>• Cognitive Behavioral Therapy (CBT)</li>
-                  <li>• Family therapy and education</li>
-                  <li>• Social skills training</li>
-                  <li>• Vocational rehabilitation</li>
-                </ul>
-              </div>
-
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-blue-600 mb-2">3. Coordinated Specialty Care</h3>
-                <p className="text-gray-700">
-                  A comprehensive, team-based approach that combines medication, therapy, family involvement, and support services to provide holistic care.
+                   Psychosocial interventions, such as cognitive-behavioral therapy (CBT), family therapy, supported employment, and social skills training, are essential components of schizophrenia treatment. These interventions aim to address the functional impairments associated with schizophrenia and promote recovery and rehabilitation.
                 </p>
               </div>
             </div>
-          </section>
-
-          {/* Living with Schizophrenia */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Living with Schizophrenia</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="font-semibold text-gray-800 mb-3">Self-Management Strategies</h3>
-                <ul className="text-gray-700 space-y-1">
-                  <li>• Take medications as prescribed</li>
-                  <li>• Maintain regular sleep schedule</li>
-                  <li>• Exercise regularly</li>
-                  <li>• Avoid alcohol and drugs</li>
-                  <li>• Practice stress management</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-800 mb-3">Support Systems</h3>
-                <ul className="text-gray-700 space-y-1">
-                  <li>• Family and friends</li>
-                  <li>• Support groups</li>
-                  <li>• Mental health professionals</li>
-                  <li>• Community resources</li>
-                  <li>• Peer support programs</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Reducing Stigma */}
-          <section className="bg-blue-50 p-8 rounded-lg">
-            <h2 className="text-xl font-semibold text-blue-600 mb-4">Reducing Stigma and Promoting Understanding</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              One of the biggest challenges facing people with schizophrenia is social stigma. Education and awareness are key to changing misconceptions and promoting acceptance.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              With proper treatment and support, many people with schizophrenia can lead fulfilling lives, maintain relationships, and contribute meaningfully to their communities.
-            </p>
           </section>
 
           {/* Conclusion */}
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-4">Conclusion</h2>
             <p className="text-gray-700 leading-relaxed">
-              Understanding schizophrenia is essential for reducing stigma and supporting those affected by this complex condition. While challenges exist, early intervention, comprehensive treatment, and strong support systems can significantly improve outcomes and quality of life for individuals living with schizophrenia.
+              Schizophrenia is a complex and multifaceted disorder that requires a comprehensive approach to treatment and care. By understanding the symptoms, neurobiology, and treatment approaches associated with schizophrenia, we can work towards reducing stigma, promoting early intervention, and improving outcomes for individuals living with this challenging condition.
             </p>
           </section>
         </article>

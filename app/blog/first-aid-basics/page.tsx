@@ -18,7 +18,7 @@ export default function FirstAidBasicsPage() {
         <div className="flex justify-center mb-12">
           <div className="w-full max-w-2xl">
             <Image
-              src="/images/first-aid.jpg"
+              src="/images/image45.jpg"
               alt="First aid basics illustration"
               width={600}
               height={400}
@@ -30,285 +30,74 @@ export default function FirstAidBasicsPage() {
         <article className="max-w-4xl mx-auto space-y-12">
           <section className="text-center">
             <p className="text-lg text-gray-700 leading-relaxed">
-              <strong>Introduction:</strong> First aid knowledge can be the difference between life and death in emergency situations. Learning basic first aid skills empowers individuals to provide immediate care before professional medical help arrives, potentially saving lives and preventing further injury.
+              <strong>Introduction:</strong> In any emergency situation, having basic first aid skills can mean the difference between life and death. Whether you're at home, at work, or out in the community, being prepared to respond effectively can save lives and prevent further injury. In this comprehensive guide, we'll delve into essential first aid skills that everyone should know, along with step-by-step instructions on how to perform them.
             </p>
           </section>
 
           <section className="bg-blue-50 p-8 rounded-lg">
-            <h2 className="text-xl font-semibold text-blue-600 mb-4">Why First Aid Matters</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              The first few minutes after an injury or medical emergency are often the most critical. Proper first aid can:
-            </p>
+
+            <div className="flex justify-center mb-8">
+                          <Image
+                            src="/images/image46.jpeg"
+                            alt="Ergonomic workspace setup"
+                            width={500}
+                            height={300}
+                            className="rounded-lg shadow-lg"
+                          />
+                        </div>
+            <h2 className="text-xl font-semibold text-gray-600 mb-4">1. Cardiopulmonary Resuscitation (CPR):</h2>
             <ul className="text-gray-700 space-y-2">
-              <li>• Preserve life and prevent the condition from worsening</li>
-              <li>• Promote recovery and reduce recovery time</li>
-              <li>• Provide reassurance and comfort to the victim</li>
-              <li>• Prevent secondary injuries</li>
-              <li>• Bridge the gap until professional help arrives</li>
+              <li>• CPR is a critical skill that can sustain a person's life until professional help arrives, particularly in cases of cardiac arrest or drowning.</li>
+              <li>• To perform CPR, remember the acronym "CAB": Compression, Airway, Breathing.</li>
+              <li>• Start with chest compressions: Place the heel of one hand on the center of the person's chest, interlock your fingers, and compress the chest to a depth of about 2 inches at a rate of 100-120 compressions per minute.</li>
+              <li>• Open the airway by tilting the person's head back and lifting the chin.</li>
+              <li>• Give rescue breaths by pinching the person's nose shut, covering their mouth with yours, and giving two breaths, each lasting about one second.</li>
+            <li>Continue cycles of 30 compressions and 2 breaths until help arrives or the person starts breathing.</li>
             </ul>
-          </section>
 
-          {/* The Primary Survey */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">The Primary Survey: DRABC</h2>
-            <p className="text-gray-700 mb-6">
-              Before providing any first aid, always perform a primary survey to assess the situation and the casualty's condition:
-            </p>
-            
-            <div className="space-y-4">
-              <div className="border-l-4 border-red-500 pl-4">
-                <h3 className="font-semibold text-gray-800">D - Danger</h3>
-                <p className="text-gray-700">Check for dangers to yourself, bystanders, and the casualty. Ensure the scene is safe.</p>
-              </div>
-              <div className="border-l-4 border-red-500 pl-4">
-                <h3 className="font-semibold text-gray-800">R - Response</h3>
-                <p className="text-gray-700">Check if the person is conscious and responsive. Tap shoulders and speak loudly.</p>
-              </div>
-              <div className="border-l-4 border-red-500 pl-4">
-                <h3 className="font-semibold text-gray-800">A - Airway</h3>
-                <p className="text-gray-700">Ensure the airway is clear. Tilt head back and lift chin to open airway.</p>
-              </div>
-              <div className="border-l-4 border-red-500 pl-4">
-                <h3 className="font-semibold text-gray-800">B - Breathing</h3>
-                <p className="text-gray-700">Look, listen, and feel for normal breathing for no more than 10 seconds.</p>
-              </div>
-              <div className="border-l-4 border-red-500 pl-4">
-                <h3 className="font-semibold text-gray-800">C - Circulation</h3>
-                <p className="text-gray-700">Check for severe bleeding and signs of circulation.</p>
-              </div>
-            </div>
-          </section>
+<h2 className="text-xl font-semibold text-gray-600 mb-4">2. Choking Relief:</h2>
+            <ul className="text-gray-700 space-y-2">
+              <li>• Choking occurs when a person's airway is blocked, preventing them from breathing effectively.</li>
+              <li>• The Heimlich maneuver is the primary technique used to dislodge an obstructed airway:</li>
+              <li>• Stand behind the person and wrap your arms around their waist.</li>
+              <li>• Make a fist with one hand and place it slightly above the person's navel, thumb side in.</li>
+              <li>• Grasp your fist with your other hand and press into the person's abdomen with a quick, upward thrust.</li>
+            <li>Repeat thrusts until the object is dislodged or the person becomes unconscious.</li>
+            </ul>
 
-          {/* CPR */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-6">Cardiopulmonary Resuscitation (CPR)</h2>
-            
-            <div className="bg-red-50 p-6 rounded-lg mb-6">
-              <h3 className="font-semibold text-red-600 mb-2">When to Perform CPR</h3>
-              <p className="text-gray-700">
-                Perform CPR when a person is unresponsive and not breathing normally or not breathing at all.
-              </p>
-            </div>
+<h2 className="text-xl font-semibold text-gray-600 mb-4">3. Treating Bleeding and Wounds:</h2>
+            <ul className="text-gray-700 space-y-2">
+              <li>• Proper wound care can prevent infection and promote healing.</li>
+              <li>• Start by applying direct pressure to the wound with a clean cloth or bandage to stop bleeding.</li>
+              <li>• Elevate the injured area above the level of the heart if possible to reduce blood flow.</li>
+              <li>• Clean the wound with soap and water, and apply an antibiotic ointment if available.</li>
+              <li>• Cover the wound with a sterile dressing or bandage and secure it in place.</li>
+            </ul>
 
-            <div className="space-y-6">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-gray-800 mb-3">Adult CPR Steps</h3>
-                <ol className="text-gray-700 space-y-2 list-decimal list-inside">
-                  <li><strong>Position:</strong> Place person on firm, flat surface. Tilt head back, lift chin.</li>
-                  <li><strong>Hand placement:</strong> Place heel of hand on center of chest, between nipples.</li>
-                  <li><strong>Compressions:</strong> Push hard and fast at least 2 inches deep, 100-120 per minute.</li>
-                  <li><strong>Rescue breaths:</strong> After 30 compressions, give 2 rescue breaths.</li>
-                  <li><strong>Continue:</strong> Repeat cycles of 30 compressions and 2 breaths until help arrives.</li>
-                </ol>
-              </div>
+            <h2 className="text-xl font-semibold text-gray-600 mb-4">4. Managing Burns:</h2>
+            <ul className="text-gray-700 space-y-2">
+              <li>• Burns can range from minor to severe and require prompt treatment to prevent complications.</li>
+              <li>• For minor burns, cool the affected area with running water for several minutes to soothe the pain and reduce swelling.</li>
+              <li>• Cover the burn with a sterile gauze bandage or clean cloth.</li>
+              <li>• For more severe burns, seek medical attention immediately and avoid applying ointments or ice, as they can further damage the skin.</li>
+            </ul>
 
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-gray-800 mb-3">Key CPR Points</h3>
-                <ul className="text-gray-700 space-y-1">
-                  <li>• Allow complete chest recoil between compressions</li>
-                  <li>• Minimize interruptions</li>
-                  <li>• Switch with another person every 2 minutes if possible</li>
-                  <li>• Don't stop until emergency services take over</li>
-                  <li>• Use an AED (Automated External Defibrillator) if available</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Choking */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Managing Choking</h2>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-yellow-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-yellow-700 mb-3">Mild Choking (Person can speak/cough)</h3>
-                <ul className="text-gray-700 space-y-2">
-                  <li>• Encourage continuous coughing</li>
-                  <li>• Don't pat the back</li>
-                  <li>• Stay with the person</li>
-                  <li>• If condition worsens, treat as severe choking</li>
-                </ul>
-              </div>
-              
-              <div className="bg-red-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-red-700 mb-3">Severe Choking (Cannot speak/cough)</h3>
-                <ol className="text-gray-700 space-y-2 list-decimal list-inside">
-                  <li>Give 5 back blows between shoulder blades</li>
-                  <li>Give 5 abdominal thrusts (Heimlich maneuver)</li>
-                  <li>Alternate between back blows and abdominal thrusts</li>
-                  <li>If person becomes unconscious, start CPR</li>
-                </ol>
-              </div>
-            </div>
-          </section>
-
-          {/* Bleeding Control */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Controlling Bleeding</h2>
-            
-            <div className="space-y-6">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-gray-800 mb-3">Steps to Control Severe Bleeding</h3>
-                <ol className="text-gray-700 space-y-2 list-decimal list-inside">
-                  <li><strong>Apply direct pressure:</strong> Use a clean cloth or gauze pad directly on the wound</li>
-                  <li><strong>Maintain pressure:</strong> Don't lift the cloth to check bleeding</li>
-                  <li><strong>Elevate:</strong> Raise the injured area above heart level if possible</li>
-                  <li><strong>Add more padding:</strong> If blood soaks through, add more layers without removing the first</li>
-                  <li><strong>Apply pressure to pressure points:</strong> If bleeding doesn't stop, apply pressure to arterial pressure points</li>
-                </ol>
-              </div>
-
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-blue-600 mb-3">Important Notes</h3>
-                <ul className="text-gray-700 space-y-1">
-                  <li>• Wear gloves or use barrier protection when possible</li>
-                  <li>• Don't remove embedded objects</li>
-                  <li>• Apply pressure around embedded objects, not on them</li>
-                  <li>• Don't use a tourniquet unless trained</li>
-                  <li>• Monitor for signs of shock</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Burns */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Treating Burns</h2>
-            
-            <div className="grid md:grid-cols-3 gap-4 mb-6">
-              <div className="border border-gray-200 p-4 rounded-lg">
-                <h3 className="font-semibold text-green-600 mb-2">First-Degree Burns</h3>
-                <p className="text-sm text-gray-700 mb-2">Red, painful, no blisters</p>
-                <ul className="text-xs text-gray-600 space-y-1">
-                  <li>• Cool with water 10-20 minutes</li>
-                  <li>• Remove jewelry/clothing</li>
-                  <li>• Apply aloe vera or moisturizer</li>
-                  <li>• Take pain relievers if needed</li>
-                </ul>
-              </div>
-              
-              <div className="border border-gray-200 p-4 rounded-lg">
-                <h3 className="font-semibold text-yellow-600 mb-2">Second-Degree Burns</h3>
-                <p className="text-sm text-gray-700 mb-2">Red, painful, with blisters</p>
-                <ul className="text-xs text-gray-600 space-y-1">
-                  <li>• Cool with water 10-20 minutes</li>
-                  <li>• Don't break blisters</li>
-                  <li>• Apply loose, sterile bandage</li>
-                  <li>• Seek medical attention</li>
-                </ul>
-              </div>
-              
-              <div className="border border-gray-200 p-4 rounded-lg">
-                <h3 className="font-semibold text-red-600 mb-2">Third-Degree Burns</h3>
-                <p className="text-sm text-gray-700 mb-2">White/charred, painless</p>
-                <ul className="text-xs text-gray-600 space-y-1">
-                  <li>• Call emergency services immediately</li>
-                  <li>• Don't use water</li>
-                  <li>• Cover with sterile cloth</li>
-                  <li>• Monitor breathing and circulation</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Shock */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Recognizing and Treating Shock</h2>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="font-semibold text-gray-800 mb-3">Signs of Shock</h3>
-                <ul className="text-gray-700 space-y-1">
-                  <li>• Pale, cold, clammy skin</li>
-                  <li>• Rapid, weak pulse</li>
-                  <li>• Shallow, rapid breathing</li>
-                  <li>• Weakness or fatigue</li>
-                  <li>• Nausea or vomiting</li>
-                  <li>• Confusion or anxiety</li>
-                  <li>• Decreased alertness</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold text-gray-800 mb-3">Treatment for Shock</h3>
-                <ul className="text-gray-700 space-y-1">
-                  <li>• Lay person flat, elevate legs 8-12 inches</li>
-                  <li>• Keep person warm but not hot</li>
-                  <li>• Don't give food or water</li>
-                  <li>• Monitor breathing and pulse</li>
-                  <li>• Be prepared to perform CPR</li>
-                  <li>• Get emergency medical help immediately</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* First Aid Kit */}
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Essential First Aid Kit Items</h2>
-            
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h3 className="font-semibold text-blue-600 mb-3">Basic Supplies</h3>
-                  <ul className="text-gray-700 space-y-1">
-                    <li>• Adhesive bandages (various sizes)</li>
-                    <li>• Sterile gauze pads</li>
-                    <li>• Medical tape</li>
-                    <li>• Elastic bandages</li>
-                    <li>• Triangular bandages</li>
-                    <li>• Antiseptic wipes</li>
-                    <li>• Disposable gloves</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="font-semibold text-blue-600 mb-3">Additional Items</h3>
-                  <ul className="text-gray-700 space-y-1">
-                    <li>• Thermometer</li>
-                    <li>• Scissors</li>
-                    <li>• Tweezers</li>
-                    <li>• Instant cold compress</li>
-                    <li>• Emergency contact numbers</li>
-                    <li>• First aid manual</li>
-                    <li>• Medications (aspirin, etc.)</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* When to Call Emergency Services */}
-          <section className="bg-red-50 p-8 rounded-lg">
-            <h2 className="text-xl font-semibold text-red-600 mb-4">When to Call Emergency Services</h2>
-            <p className="text-gray-700 mb-4">
-              Always call emergency services (911 or your local emergency number) for:
-            </p>
-            <div className="grid md:grid-cols-2 gap-4">
-              <ul className="text-gray-700 space-y-1">
-                <li>• Unconsciousness or altered mental state</li>
-                <li>• Difficulty breathing or no breathing</li>
-                <li>• Severe bleeding that won't stop</li>
-                <li>• Chest pain or heart attack symptoms</li>
-                <li>• Stroke symptoms</li>
-                <li>• Severe burns</li>
-              </ul>
-              <ul className="text-gray-700 space-y-1">
-                <li>• Suspected spinal injury</li>
-                <li>• Severe allergic reactions</li>
-                <li>• Poisoning</li>
-                <li>• Severe trauma</li>
-                <li>• Any life-threatening emergency</li>
-                <li>• When in doubt</li>
-              </ul>
-            </div>
+           <div className="flex justify-center mb-8">
+                         <Image
+                           src="/images/image47.jpg"
+                           alt="Ergonomic workspace setup"
+                           width={500}
+                           height={300}
+                           className="rounded-lg shadow-lg"
+                         />
+                       </div>
           </section>
 
           {/* Conclusion */}
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-4">Conclusion</h2>
             <p className="text-gray-700 leading-relaxed">
-              Mastering first aid basics can make you a valuable first responder in emergency situations. While this guide provides essential information, hands-on training from certified instructors is highly recommended. Consider taking a certified first aid course to practice these skills and stay current with the latest techniques. Remember, the key to effective first aid is staying calm, assessing the situation carefully, and providing appropriate care within your skill level while seeking professional help when needed.
+              By mastering these essential first aid skills, you can be better prepared to handle emergencies and provide life-saving assistance when it matters most. Remember to stay calm, assess the situation, and take action promptly. With practice and knowledge, you can make a difference in the lives of those around you during times of crisis.
             </p>
           </section>
         </article>

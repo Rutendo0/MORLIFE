@@ -20,7 +20,7 @@ export default function TreatingLowerBackPainPage() {
         <div className="flex justify-center mb-12">
           <div className="w-full max-w-2xl">
             <Image
-              src="/images/back-pain.jpg"
+              src="/images/image24.jpg"
               alt="Lower back pain illustration"
               width={600}
               height={400}
@@ -42,7 +42,7 @@ export default function TreatingLowerBackPainPage() {
           <section>
             <div className="flex justify-center mb-8">
               <Image
-                src="/images/image2.png"
+                src="/images/image31.jpg"
                 alt="Person walking with family"
                 width={500}
                 height={300}
@@ -65,7 +65,7 @@ export default function TreatingLowerBackPainPage() {
           <section>
             <div className="flex justify-center mb-8">
               <Image
-                src="/images/image3.png"
+                src="/images/image32.jpg"
                 alt="Physical therapy session"
                 width={500}
                 height={300}
@@ -88,7 +88,7 @@ export default function TreatingLowerBackPainPage() {
           <section>
             <div className="flex justify-center mb-8">
               <Image
-                src="/images/pills.png"
+                src="/images/image33.jpg"
                 alt="Person doing meditation"
                 width={500}
                 height={300}
@@ -111,7 +111,7 @@ export default function TreatingLowerBackPainPage() {
           <section>
             <div className="flex justify-center mb-8">
               <Image
-                src="/images/doctor.JPG"
+                src="/images/image34.jpg"
                 alt="Ergonomic workspace setup"
                 width={500}
                 height={300}
@@ -132,6 +132,17 @@ export default function TreatingLowerBackPainPage() {
 
           {/* Pharmacological Interventions Section */}
           <section>
+
+ <div className="flex justify-center mb-8">
+              <Image
+                src="/images/image35.jpg"
+                alt="Ergonomic workspace setup"
+                width={500}
+                height={300}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+
             <div className="space-y-4">
               <h2 className="text-xl font-semibold text-gray-900">5. Pharmacological Interventions:</h2>
               <p className="text-gray-700 leading-relaxed">

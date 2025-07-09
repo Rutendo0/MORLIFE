@@ -12,7 +12,7 @@ export default function PsychologyPage() {
        <section
   className="relative h-[80vh] bg-cover bg-center"
   style={{
-    backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('http://www.mapef.org/wp-content/uploads/2020/11/GettyImages-1207514166.jpg')",
+    backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/image53.jpg')",
   }}
 >
   <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
@@ -42,7 +42,7 @@ export default function PsychologyPage() {
             {/* Individual Counseling */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image12.png"
+                src="/images/image12.jpg"
                 alt="Individual counseling session"
                 width={400}
                 height={250}
@@ -59,7 +59,7 @@ export default function PsychologyPage() {
             {/* Group Therapy */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                 src="/images/image13.png"
+                 src="/images/image13.jpeg"
                 alt="Group therapy session"
                 width={400}
                 height={250}
@@ -76,7 +76,7 @@ export default function PsychologyPage() {
             {/* Couples Counseling */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image14.png"
+                src="/images/image14.jpg"
                 alt="Couples counseling session"
                 width={400}
                 height={250}
@@ -96,7 +96,7 @@ export default function PsychologyPage() {
             {/* Family Therapy */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image15.png"
+                src="/images/image15.jpg"
                 alt="Family therapy session"
                 width={400}
                 height={250}
@@ -113,7 +113,7 @@ export default function PsychologyPage() {
             {/* Psychiatric Services */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image16.png"
+                src="/images/image17.jpeg"
                 alt="Psychiatric consultation"
                 width={400}
                 height={250}
@@ -130,7 +130,7 @@ export default function PsychologyPage() {
             {/* Crisis Intervention */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image17.png"
+                src="/images/image16.jpg"
                 alt="Crisis intervention support"
                 width={400}
                 height={250}

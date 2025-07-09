@@ -12,7 +12,7 @@ export default function GeneralPractitionerPage() {
      <section
   className="relative h-[80vh] bg-cover bg-center"
   style={{
-    backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/image5.png')",
+    backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/image5.jpeg')",
   }}
 >
   <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
@@ -43,7 +43,7 @@ export default function GeneralPractitionerPage() {
             {/* Comprehensive Health Assessments */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image6.PNG"
+                src="/images/image6.jpeg"
                 alt="Health assessment"
                 width={400}
                 height={250}
@@ -60,7 +60,7 @@ export default function GeneralPractitionerPage() {
             {/* Chronic Disease Management */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image7.PNG"
+                src="/images/image7.jpeg"
                 alt="Chronic disease management"
                 width={400}
                 height={250}
@@ -77,7 +77,7 @@ export default function GeneralPractitionerPage() {
             {/* Preventive Care */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image8.PNG"
+                src="/images/image8.jpg"
                 alt="Preventive care"
                 width={400}
                 height={250}
@@ -96,7 +96,7 @@ export default function GeneralPractitionerPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image9.png"
+                src="/images/image9.jpg"
                 alt="Telemedicine consultation"
                 width={400}
                 height={250}
@@ -113,7 +113,7 @@ export default function GeneralPractitionerPage() {
             {/* Occupational Health */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image10.png"
+                src="/images/image10.jpeg"
                 alt="Occupational health"
                 width={400}
                 height={250}
@@ -130,7 +130,7 @@ export default function GeneralPractitionerPage() {
             {/* Emergency Care */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/image11.png"
+                src="/images/image11.jpg"
                 alt="Emergency care"
                 width={400}
                 height={250}
