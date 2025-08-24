@@ -27,15 +27,28 @@ export default function PsychologyPage() {
 </section>
 
       <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-16">
-        <div className="text-center mb-12">
-          <p className="text-lg text-blue-600 max-w-3xl mx-auto">
-            YOUR MENTAL HEALTH IS JUST AS IMPORTANT AS YOUR PHYSICAL HEALTH, NEVER LET SOCIAL TABOOS STOP YOU FROM RECEIVING THE MUCH NEEDED SUPPORT YOU NEED.MOLIFE IS HERE TO HELP YOU, NOT TO JUDGE
-          </p>
+        {/* Mental Health Message Section */}
+        <div className="text-center mb-16">
+          <div className="bg-gradient-to-r from-blue-50 to-sky-50 rounded-2xl p-8 sm:p-12 border border-blue-100 shadow-lg">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-6 leading-relaxed">
+                Your Mental Health is Just as Important as Your Physical Health
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-sky-400 mx-auto mb-6 rounded-full"></div>
+              <p className="text-lg sm:text-xl text-slate-700 leading-relaxed">
+                Never let social taboos stop you from receiving the much-needed support you deserve. 
+                At <span className="font-semibold text-blue-600">MOLIFE</span>, we're here to help you heal, not to judge.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Services Section */}
         <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl text-blue-600 text-center mb-12">OUR SERVICES</h2>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Our Services</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-sky-400 mx-auto rounded-full"></div>
+          </div>
           
           {/* First Row of Services */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -147,24 +160,32 @@ export default function PsychologyPage() {
         </section>
 
         {/* Call to Action */}
-        <section className="text-center bg-blue-600 text-white p-8 rounded-lg">
-          <h2 className="text-2xl sm:text-3xl mb-4">READY TO START YOUR HEALING JOURNEY?</h2>
-          <p className="text-lg mb-6">
-            Take the first step towards better mental health with our professional psychology services
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/book-appointment"
-              className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
-            >
-              Book Psychology Consultation
-            </Link>
-            <Link
-              href="/contact"
-              className="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition-colors"
-            >
-              Contact Us
-            </Link>
+        <section className="text-center">
+          <div className="bg-gradient-to-r from-sky-100 to-blue-100 rounded-2xl p-8 sm:p-12 border border-sky-200 shadow-lg">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-4">
+                Ready to Start Your Healing Journey?
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-sky-400 mx-auto mb-6 rounded-full"></div>
+              <p className="text-lg text-slate-700 mb-8 leading-relaxed">
+                Take the first step towards better mental health with our professional psychology services. 
+                Your path to wellness begins with a single conversation.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/book-appointment"
+                  className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2"
+                >
+                  Book Psychology Consultation
+                </Link>
+                <Link
+                  href="/contact"
+                  className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2"
+                >
+                  Contact Us
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
       </main>

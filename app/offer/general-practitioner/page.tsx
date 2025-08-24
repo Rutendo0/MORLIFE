@@ -147,21 +147,21 @@ export default function GeneralPractitionerPage() {
         </section>
 
         {/* Call to Action */}
-        <section className="text-center bg-blue-600 text-white p-8 rounded-lg">
-          <h2 className="text-2xl sm:text-3xl mb-4">READY FOR YOUR CONSULTATION?</h2>
-          <p className="text-lg mb-6">
+        <section className="text-center bg-sky-100 text-sky-800 p-8 rounded-lg border border-sky-200">
+          <h2 className="text-2xl sm:text-3xl mb-4 text-sky-900">READY FOR YOUR CONSULTATION?</h2>
+          <p className="text-lg mb-6 text-sky-700">
             Schedule your appointment with our qualified general practitioners today
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/book-appointment"
-              className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
+              className="bg-sky-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-sky-700 transition-colors shadow-md"
             >
               Book GP Consultation
             </Link>
             <Link
               href="/contact"
-              className="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition-colors"
+              className="border border-sky-600 text-sky-600 px-6 py-3 rounded-lg font-medium hover:bg-sky-600 hover:text-white transition-colors"
             >
               Contact Us
             </Link>

@@ -1,141 +1,261 @@
 "use client"
 import Header from "@/components/header"
-import { Link } from "lucide-react"
+import Link from "next/link"
 import Image from "next/image"
+import { Mail, Phone, Award, GraduationCap } from "lucide-react"
 
 export default function OurTeamPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-sky-50">
       <Header />
 
-      <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-16">
-       
+      <main className="container mx-auto px-4 sm:px-6 py-12 sm:py-20">
+        {/* Hero Section */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-800 mb-6">
+            Meet Our <span className="text-sky-600">Expert Team</span>
+          </h1>
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            Our dedicated healthcare professionals bring years of experience and compassionate care 
+            to provide you with the highest quality medical services.
+          </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-sky-400 to-sky-600 mx-auto mt-8 rounded-full"></div>
+        </div>
 
         {/* Team Members Grid */}
-        <section className="grid gap-16">
+        <section className="space-y-16">
           
-          {/* First Row - Tadiwa and Mazvita */}
-          <div className="grid md:grid-cols-2 gap-12">
+          {/* First Row - Leadership Team */}
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             
             {/* Tadiwa Chisango */}
-            <div className="text-center">
-              <div className="bg-gray-100 rounded-lg p-8 mb-6">
-                <Image
-                  src="/images/image18.jpeg"
-                  alt="Tadiwa Chisango"
-                  width={300}
-                  height={400}
-                  className="w-64 h-80 object-cover rounded-lg mx-auto"
-                />
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-100">
+              <div className="p-8">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                  <div className="relative">
+                    <div className="w-32 h-32 rounded-2xl overflow-hidden bg-gradient-to-br from-sky-100 to-sky-200 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                      <Image
+                        src="/images/image18.jpeg"
+                        alt="Tadiwa Chisango"
+                        width={128}
+                        height={128}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center shadow-lg">
+                      <Award className="w-4 h-4 text-white" />
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1 text-center sm:text-left">
+                    <h3 className="text-2xl font-bold text-slate-800 mb-2">Tadiwa Chisango</h3>
+                    <div className="inline-flex items-center px-3 py-1 bg-sky-100 text-sky-700 rounded-full text-sm font-semibold mb-4">
+                      <GraduationCap className="w-4 h-4 mr-2" />
+                      Managing Director
+                    </div>
+                    <p className="text-slate-600 leading-relaxed text-sm">
+                      An accomplished professional with extensive experience in customer-facing roles and a diploma in First-Aid. 
+                      Tadiwa brings expertise in client engagement and exceptional service delivery, with strong communication 
+                      and problem-solving skills developed throughout her career.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-2 text-gray-800">TADIWA CHISANGO</h3>
-              <h4 className="text-lg font-semibold mb-4 text-blue-600">MANAGING DIRECTOR</h4>
-              <p className="text-gray-700 leading-relaxed">
-               Miss Chisango is an accomplished professional with extensive experience in customer-facing roles and a diploma in First-Aid. With a proven track record of success, she brings a wealth of expertise in engaging with clients and delivering exceptional service. Her background in customer relations has equipped her with strong communication, interpersonal, and problem-solving skills. Throughout her career, Tadiwa has demonstrated a deep commitment to meeting customer needs and fostering positive relationships. Her dedication to excellence and her ability to effectively address diverse customer preferences make her a valuable asset in any customer-centric setting..
-              </p>
             </div>
 
             {/* Mazvita Mwayera */}
-            <div className="text-center">
-              <div className="bg-gray-100 rounded-lg p-8 mb-6">
-                <Image
-                  src="/images/image19.png"
-                  alt="Mazvita Mwayera"
-                  width={300}
-                  height={400}
-                  className="w-64 h-80 object-cover rounded-lg mx-auto"
-                />
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-100">
+              <div className="p-8">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                  <div className="relative">
+                    <div className="w-32 h-32 rounded-2xl overflow-hidden bg-gradient-to-br from-sky-100 to-sky-200 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                      <Image
+                        src="/images/image19.PNG"
+                        alt="Mazvita Mwayera"
+                        width={128}
+                        height={128}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg">
+                      <Award className="w-4 h-4 text-white" />
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1 text-center sm:text-left">
+                    <h3 className="text-2xl font-bold text-slate-800 mb-2">Mazvita Mwayera</h3>
+                    <div className="inline-flex items-center px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold mb-2">
+                      <GraduationCap className="w-4 h-4 mr-2" />
+                      Medical Director
+                    </div>
+                    <div className="text-xs text-slate-500 mb-4 font-medium">
+                      Mental Health Specialist • BSc Honours Occupational Therapy
+                    </div>
+                    <p className="text-slate-600 leading-relaxed text-sm">
+                      A seasoned occupational therapist specializing in mental health from the University of Zimbabwe. 
+                      Dedicated to helping individuals navigate mental health challenges through personalized therapy 
+                      and evidence-based practices.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-2 text-gray-800">MAZVITA MWAYERA</h3>
-              <h4 className="text-lg font-semibold mb-2 text-blue-600">MEDICAL DIRECTOR</h4>
-              <h5 className="text-md font-medium mb-4 text-gray-600">MENTAL HEALTH SPECIALIST (BSC HONOURS OCCUPATIONAL THERAPY)</h5>
-              <p className="text-gray-700 leading-relaxed">
-                Miss Mwayera is a seasoned occupational therapist specializing in mental health, equipped with a BSc Honours in Occupational Therapy from the University of Zimbabwe. With a wealth of experience, she is dedicated to helping individuals navigate the challenges of mental health through personalized therapy and support. Mazvita is passionate about empowering her clients to achieve greater independence and well-being in their daily lives, using evidence-based practices tailored to their unique needs.
-              </p>
             </div>
           </div>
 
-          {/* Second Row - Michelle and Jessie */}
-          <div className="grid md:grid-cols-2 gap-12">
+          {/* Second Row - Medical Doctors */}
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             
             {/* Dr Michelle Chilumbiri */}
-            <div className="text-center">
-              <div className="bg-gray-100 rounded-lg p-8 mb-6">
-                <Image
-                  src="/images/image20.png"
-                  alt="Dr Michelle Chilumbiri"
-                  width={300}
-                  height={400}
-                  className="w-64 h-80 object-cover rounded-lg mx-auto"
-                />
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-100">
+              <div className="p-8">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                  <div className="relative">
+                    <div className="w-32 h-32 rounded-2xl overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                      <Image
+                        src="/images/image20.PNG"
+                        alt="Dr Michelle Chilumbiri"
+                        width={128}
+                        height={128}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-lg">
+                      <Award className="w-4 h-4 text-white" />
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1 text-center sm:text-left">
+                    <h3 className="text-2xl font-bold text-slate-800 mb-2">Dr Michelle Chilumbiri</h3>
+                    <div className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-2">
+                      <GraduationCap className="w-4 h-4 mr-2" />
+                      Medical Doctor
+                    </div>
+                    <div className="text-xs text-slate-500 mb-4 font-medium">
+                      MBBS • Internal Medicine Specialist
+                    </div>
+                    <p className="text-slate-600 leading-relaxed text-sm">
+                      A graduate of the University of Zimbabwe's MBBS program, specializing in internal medicine. 
+                      Dr. Michelle focuses on evidence-based practices and provides personalized care, empowering 
+                      patients through education and compassionate support.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-2 text-gray-800">DR MICHELLE CHILUMBIRI</h3>
-              <h4 className="text-lg font-semibold mb-4 text-blue-600">MEDICAL DOCTOR (BACHELOR OF MEDICINE AND BACHELOR OF SURGERY, DEGREES)</h4>
-              <p className="text-gray-700 leading-relaxed">
-                Dr. Chilumbiri, a graduate of the University of Zimbabwe's esteemed Bachelor of Medicine and Bachelor of Surgery (MBBS) program, is a compassionate medical professional specializing in internal medicine. With a focus on evidence-based practices, Dr. Michelle is dedicated to providing personalized care to her patients, empowering them through education and support.
-              </p>
             </div>
 
             {/* Dr Jessie Chilumbiri */}
-            <div className="text-center">
-              <div className="bg-gray-100 rounded-lg p-8 mb-6">
-                <Image
-                  src="/images/image21.png"
-                  alt="Dr Jessie Chilumbiri"
-                  width={300}
-                  height={400}
-                  className="w-64 h-80 object-cover rounded-lg mx-auto"
-                />
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-100">
+              <div className="p-8">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                  <div className="relative">
+                    <div className="w-32 h-32 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-100 to-purple-200 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                      <Image
+                        src="/images/image21.PNG"
+                        alt="Dr Jessie Chilumbiri"
+                        width={128}
+                        height={128}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center shadow-lg">
+                      <Award className="w-4 h-4 text-white" />
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1 text-center sm:text-left">
+                    <h3 className="text-2xl font-bold text-slate-800 mb-2">Dr Jessie Chilumbiri</h3>
+                    <div className="inline-flex items-center px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-2">
+                      <GraduationCap className="w-4 h-4 mr-2" />
+                      Medical Doctor
+                    </div>
+                    <div className="text-xs text-slate-500 mb-4 font-medium">
+                      MBBS • Orthopedic Surgery Specialist
+                    </div>
+                    <p className="text-slate-600 leading-relaxed text-sm">
+                      A skilled surgeon from the University of Zimbabwe's MBBS program, specializing in orthopedics. 
+                      Dr. Jess combines technical proficiency with patient-centered care to enhance quality of life 
+                      through innovative surgical interventions.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-2 text-gray-800">DR JESSIE CHILUMBIRI</h3>
-              <h4 className="text-lg font-semibold mb-4 text-blue-600">MEDICAL DOCTOR (BACHELOR OF MEDICINE AND BACHELOR OF SURGERY DEGREES)</h4>
-              <p className="text-gray-700 leading-relaxed">
-                Dr. Matiki, a product of the University of Zimbabwe's renowned Bachelor of Medicine and Bachelor of Surgery (MBBS) program, is a skilled surgeon specializing in orthopedics. Combining technical proficiency with a patient-centered approach, Dr. Jess is committed to enhancing the quality of life for individuals suffering from musculoskeletal conditions through innovative surgical interventions and compassionate care.
-              </p>
             </div>
           </div>
 
-          {/* Third Row - Dr Faith Masanganise */}
+          {/* Third Row - Psychiatrist */}
           <div className="flex justify-center">
-            <div className="text-center max-w-md">
-              <div className="bg-gray-100 rounded-lg p-8 mb-6">
-                <Image
-                  src="/images/image22.png"
-                  alt="Dr Faith Masanganise"
-                  width={300}
-                  height={400}
-                  className="w-64 h-80 object-cover rounded-lg mx-auto"
-                />
+            <div className="max-w-2xl w-full">
+              <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-100">
+                <div className="p-8">
+                  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                    <div className="relative">
+                      <div className="w-32 h-32 rounded-2xl overflow-hidden bg-gradient-to-br from-rose-100 to-rose-200 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                        <Image
+                          src="/images/image22.PNG"
+                          alt="Dr Faith Masanganise"
+                          width={128}
+                          height={128}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-rose-500 rounded-full flex items-center justify-center shadow-lg">
+                        <Award className="w-4 h-4 text-white" />
+                      </div>
+                    </div>
+                    
+                    <div className="flex-1 text-center sm:text-left">
+                      <h3 className="text-2xl font-bold text-slate-800 mb-2">Dr Faith Masanganise</h3>
+                      <div className="inline-flex items-center px-3 py-1 bg-rose-100 text-rose-700 rounded-full text-sm font-semibold mb-2">
+                        <GraduationCap className="w-4 h-4 mr-2" />
+                        Psychiatrist
+                      </div>
+                      <div className="text-xs text-slate-500 mb-4 font-medium">
+                        Masters in Medicine (Psychiatry) • Diploma in Mental Health
+                      </div>
+                      <p className="text-slate-600 leading-relaxed text-sm">
+                        A psychiatrist with extensive mental health expertise from the University of Zimbabwe. 
+                        Dr. Faith provides compassionate, evidence-based treatment with a holistic approach, 
+                        while actively contributing to research and mental health advocacy.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-2 text-gray-800">DR FAITH MASANGANISE</h3>
-              <h4 className="text-lg font-semibold mb-2 text-blue-600">PSYCHIATRIST</h4>
-              <h5 className="text-md font-medium mb-4 text-gray-600">(MASTERS DEGREE IN MEDICINE (psychiatry) and DIPLOMA IN MENTAL HEALTH)</h5>
-              <p className="text-gray-700 leading-relaxed">
-                Dr. Masanganise is a psychiatrist with extensive expertise in mental health. She holds a Master's degree in Medicine (Psychiatry) and a Diploma in Mental Health from the University of Zimbabwe. With a holistic approach to patient care, she is committed to providing compassionate, evidence-based treatment tailored to individual needs. Dr. Faith is also involved in research and education, advocating for mental health awareness and reform.
-              </p>
             </div>
           </div>
         </section>
 
         {/* Call to Action */}
-        <section className="mt-16 text-center bg-blue-600 text-white p-8 rounded-lg">
-          <h2 className="text-2xl sm:text-3xl mb-4">READY TO MEET OUR TEAM?</h2>
-          <p className="text-lg mb-6">
-            Book a consultation with any of our qualified healthcare professionals today
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/book-appointment"
-              className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
-            >
-              Book Consultation
-            </Link>
-            <Link
-              href="/contact"
-              className="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition-colors"
-            >
-              Contact Us
-            </Link>
+        <section className="mt-20">
+          <div className="bg-gradient-to-r from-sky-600 via-sky-500 to-blue-600 rounded-3xl shadow-2xl overflow-hidden">
+            <div className="px-8 py-12 sm:px-12 sm:py-16 text-center relative">
+              <div className="absolute inset-0 bg-black/10"></div>
+              <div className="relative z-10">
+                <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                  Ready to Meet Our Team?
+                </h2>
+                <p className="text-xl text-sky-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+                  Book a consultation with any of our qualified healthcare professionals and 
+                  experience personalized, compassionate care today.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <Link
+                    href="/book-appointment"
+                    className="group bg-white text-sky-600 px-8 py-4 rounded-xl font-semibold hover:bg-sky-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2"
+                  >
+                    <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
+                    Book Consultation
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="group border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-sky-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2"
+                  >
+                    <Mail className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

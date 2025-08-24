@@ -1,0 +1,835 @@
+
+"use client"
+import Header from "@/components/header"
+import Image from "next/image"
+import Link from "next/link"
+import { 
+  Calendar, 
+  Clock, 
+  User, 
+  ArrowLeft, 
+  ArrowRight, 
+  Share2, 
+  Bookmark, 
+  Heart,
+  MessageCircle,
+  Eye,
+  ChevronUp,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Copy,
+  Check,
+  Brain,
+  Lightbulb,
+  Shield,
+  Target,
+  BookOpen,
+  Quote,
+  Tag
+} from "lucide-react"
+import { useState, useEffect } from "react"
+
+export default function UnderstandingAnxietyPage() {
+  const [isBookmarked, setIsBookmarked] = useState(false)
+  const [isLiked, setIsLiked] = useState(false)
+  const [likeCount, setLikeCount] = useState(247)
+  const [showShareMenu, setShowShareMenu] = useState(false)
+  const [copied, setCopied] = useState(false)
+  const [readingProgress, setReadingProgress] = useState(0)
+  const [showBackToTop, setShowBackToTop] = useState(false)
+
+  // Reading progress tracking
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight
+      const progress = (window.scrollY / totalHeight) * 100
+      setReadingProgress(progress)
+      setShowBackToTop(window.scrollY > 500)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const handleLike = () => {
+    setIsLiked(!isLiked)
+    setLikeCount(prev => isLiked ? prev - 1 : prev + 1)
+  }
+
+  const handleShare = (platform: string) => {
+    const url = window.location.href
+    const title = "Understanding Anxiety: Effects, Identification, and Scientifically Proven Methods to Alleviate It"
+    
+    switch (platform) {
+      case 'facebook':
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank')
+        break
+      case 'twitter':
+        window.open(`https://twitter.com/intent/tweet?url=${url}&text=${title}`, '_blank')
+        break
+      case 'linkedin':
+        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank')
+        break
+      case 'copy':
+        navigator.clipboard.writeText(url)
+        setCopied(true)
+        setTimeout(() => setCopied(false), 2000)
+        break
+    }
+    setShowShareMenu(false)
+  }
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const articleData = {
+    title: "Understanding Anxiety: Effects, Identification, and Scientifically Proven Methods to Alleviate It",
+    author: "Dr. Sarah Johnson",
+    publishDate: "June 9, 2024",
+    readTime: "8 min read",
+    category: "Mental Health",
+    tags: ["anxiety", "mental health", "treatment", "wellness"],
+    views: "2.3k",
+    image: "/images/image23.jpg"
+  }
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-sky-50">
+      <Header />
+
+      {/* Reading Progress Bar */}
+      <div className="fixed top-0 left-0 w-full h-1 bg-slate-200 z-50">
+        <div 
+          className="h-full bg-gradient-to-r from-sky-500 to-sky-600 transition-all duration-300"
+          style={{ width: `${readingProgress}%` }}
+        />
+      </div>
+
+      <main className="container mx-auto px-4 sm:px-6 py-12 sm:py-20">
+        {/* Breadcrumb */}
+        <nav className="flex items-center gap-2 text-sm text-slate-600 mb-8">
+          <Link href="/" className="hover:text-sky-600 transition-colors">Home</Link>
+          <span>/</span>
+          <Link href="/blog" className="hover:text-sky-600 transition-colors">Blog</Link>
+          <span>/</span>
+          <span className="text-slate-800">Understanding Anxiety</span>
+        </nav>
+
+        {/* Article Header */}
+        <header className="max-w-4xl mx-auto mb-12">
+          {/* Category Badge */}
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-100 to-blue-100 text-sky-700 px-5 py-2.5 rounded-full text-sm font-semibold mb-8 shadow-sm">
+              <Brain className="w-4 h-4" />
+              {articleData.category}
+            </div>
+            
+            {/* Title */}
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-8 leading-tight max-w-3xl mx-auto">
+              {articleData.title}
+            </h1>
+          </div>
+
+          {/* Author & Meta Info Card */}
+          <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-6 mb-8">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+              {/* Author Info */}
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-sky-400 to-blue-500 rounded-full flex items-center justify-center">
+                  <User className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-slate-800 text-lg">{articleData.author}</h3>
+                  <p className="text-slate-600 text-sm">Medical Professional</p>
+                </div>
+              </div>
+
+              {/* Article Meta */}
+              <div className="flex flex-wrap items-center gap-6 text-slate-600">
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4 text-sky-600" />
+                  <span className="text-sm font-medium">{articleData.publishDate}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-emerald-600" />
+                  <span className="text-sm font-medium">{articleData.readTime}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Eye className="w-4 h-4 text-purple-600" />
+                  <span className="text-sm font-medium">{articleData.views} views</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="flex items-center justify-center gap-3">
+            <button
+              onClick={handleLike}
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl border transition-all duration-300 font-medium ${
+                isLiked 
+                  ? 'bg-red-50 border-red-200 text-red-600 shadow-sm' 
+                  : 'bg-white border-slate-200 text-slate-600 hover:border-red-300 hover:text-red-600 hover:shadow-sm'
+              }`}
+            >
+              <Heart className={`w-5 h-5 ${isLiked ? 'fill-current' : ''}`} />
+              <span>{likeCount}</span>
+            </button>
+
+            <button
+              onClick={() => setIsBookmarked(!isBookmarked)}
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl border transition-all duration-300 font-medium ${
+                isBookmarked 
+                  ? 'bg-sky-50 border-sky-200 text-sky-600 shadow-sm' 
+                  : 'bg-white border-slate-200 text-slate-600 hover:border-sky-300 hover:text-sky-600 hover:shadow-sm'
+              }`}
+            >
+              <Bookmark className={`w-5 h-5 ${isBookmarked ? 'fill-current' : ''}`} />
+              <span>Save</span>
+            </button>
+
+            <div className="relative">
+              <button
+                onClick={() => setShowShareMenu(!showShareMenu)}
+                className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-200 text-slate-600 hover:border-slate-300 hover:text-slate-700 transition-all duration-300 bg-white font-medium hover:shadow-sm"
+              >
+                <Share2 className="w-5 h-5" />
+                <span>Share</span>
+              </button>
+
+                {showShareMenu && (
+                  <div className="absolute top-full mt-2 right-0 bg-white rounded-xl shadow-2xl border border-slate-100 p-4 z-10 min-w-48">
+                    <div className="space-y-2">
+                      <button
+                        onClick={() => handleShare('facebook')}
+                        className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors text-left"
+                      >
+                        <Facebook className="w-5 h-5 text-blue-600" />
+                        <span>Facebook</span>
+                      </button>
+                      <button
+                        onClick={() => handleShare('twitter')}
+                        className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors text-left"
+                      >
+                        <Twitter className="w-5 h-5 text-sky-500" />
+                        <span>Twitter</span>
+                      </button>
+                      <button
+                        onClick={() => handleShare('linkedin')}
+                        className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors text-left"
+                      >
+                        <Linkedin className="w-5 h-5 text-blue-700" />
+                        <span>LinkedIn</span>
+                      </button>
+                      <button
+                        onClick={() => handleShare('copy')}
+                        className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors text-left"
+                      >
+                        {copied ? (
+                          <Check className="w-5 h-5 text-green-600" />
+                        ) : (
+                          <Copy className="w-5 h-5 text-slate-600" />
+                        )}
+                        <span>{copied ? 'Copied!' : 'Copy Link'}</span>
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Featured Image */}
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+            <Image
+              src={articleData.image}
+              alt="Understanding Anxiety"
+              width={800}
+              height={500}
+              className="w-full h-96 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+          </div>
+        </header>
+
+        {/* Article Content */}
+        <div className="grid lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
+          {/* Table of Contents - Sidebar */}
+          <aside className="lg:col-span-1">
+            <div className="sticky top-24 bg-white rounded-2xl shadow-lg border border-slate-100 p-6">
+              <h3 className="font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <BookOpen className="w-5 h-5 text-sky-600" />
+                Table of Contents
+              </h3>
+              <nav className="space-y-2">
+                <a href="#introduction" className="block text-sm text-slate-600 hover:text-sky-600 transition-colors py-1">Introduction</a>
+                <a href="#effects" className="block text-sm text-slate-600 hover:text-sky-600 transition-colors py-1">Effects of Anxiety</a>
+                <a href="#identification" className="block text-sm text-slate-600 hover:text-sky-600 transition-colors py-1">Identifying Anxiety</a>
+                <a href="#treatment" className="block text-sm text-slate-600 hover:text-sky-600 transition-colors py-1">Treatment Methods</a>
+                <a href="#conclusion" className="block text-sm text-slate-600 hover:text-sky-600 transition-colors py-1">Conclusion</a>
+              </nav>
+            </div>
+          </aside>
+
+          {/* Main Article Content */}
+          <article className="lg:col-span-3 space-y-12">
+            {/* Introduction */}
+            <section id="introduction" className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-2xl p-8 border border-sky-100">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-sky-500 rounded-xl flex items-center justify-center">
+                  <Lightbulb className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-2xl font-bold text-slate-800">Introduction</h2>
+              </div>
+              <div className="prose prose-lg max-w-none">
+                <p className="text-slate-700 leading-relaxed text-lg">
+                  Anxiety is a prevalent mental health condition affecting millions of people worldwide. Characterized by excessive worry, fear, and nervousness, it can significantly impact daily life. Understanding the effects of anxiety and identifying it in oneself or others is crucial for seeking and providing the right support.
+                </p>
+                <p className="text-slate-700 leading-relaxed">
+                  This comprehensive guide delves into the effects of anxiety, how to recognize it, and scientifically proven methods to alleviate it, providing you with the knowledge and tools needed for better mental health management.
+                </p>
+              </div>
+            </section>
+
+            {/* Effects of Anxiety Section */}
+            <section id="effects">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 bg-red-500 rounded-xl flex items-center justify-center">
+                  <Target className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-2xl font-bold text-slate-800">The Effects of Anxiety</h2>
+              </div>
+              
+              <p className="text-slate-700 leading-relaxed mb-8 text-lg">
+                Anxiety manifests in various ways, impacting both physical and mental health. Understanding these effects is crucial for recognition and treatment.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Physical Effects */}
+                <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
+                      <Heart className="w-5 h-5 text-red-600" />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-800">Physical Effects</h3>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-red-200 pl-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Increased Heart Rate & Palpitations</h4>
+                      <p className="text-slate-600 text-sm">
+                        Anxiety triggers the body's "fight or flight" response, causing the heart to beat faster. Research shows that individuals with anxiety disorders often experience tachycardia and palpitations.
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-red-200 pl-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Muscle Tension</h4>
+                      <p className="text-slate-600 text-sm">
+                        Chronic anxiety can lead to muscle stiffness and pain, often described as a constant feeling of tightness or aching in the muscles.
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-red-200 pl-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Fatigue</h4>
+                      <p className="text-slate-600 text-sm">
+                        The constant state of alertness can be exhausting. Fatigue is one of the most commonly reported symptoms of anxiety disorders.
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-red-200 pl-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Gastrointestinal Issues</h4>
+                      <p className="text-slate-600 text-sm">
+                        Anxiety often causes stomach problems, including nausea, diarrhea, and irritable bowel syndrome (IBS). Studies show a strong link between anxiety and gastrointestinal disorders.
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-red-200 pl-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Headaches & Migraines</h4>
+                      <p className="text-slate-600 text-sm">
+                        Stress and tension from anxiety can result in frequent headaches and migraines. Research confirms the association between anxiety and increased headache frequency.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mental and Emotional Effects */}
+                <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                      <Brain className="w-5 h-5 text-purple-600" />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-800">Mental & Emotional Effects</h3>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-purple-200 pl-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Persistent Worry</h4>
+                      <p className="text-slate-600 text-sm">
+                        Individuals with anxiety often have uncontrollable, excessive concerns about various aspects of life, leading to a continuous cycle of negative thoughts and fears.
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-purple-200 pl-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Restlessness</h4>
+                      <p className="text-slate-600 text-sm">
+                        Difficulty relaxing and staying still is common. People with anxiety frequently report a sense of restlessness or being "on edge."
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-purple-200 pl-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Irritability</h4>
+                      <p className="text-slate-600 text-sm">
+                        Anxiety can make people more prone to anger and frustration. Even minor issues can trigger significant emotional responses.
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-purple-200 pl-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Difficulty Concentrating</h4>
+                      <p className="text-slate-600 text-sm">
+                        The mind may feel scattered or foggy, making it hard to focus on tasks or retain information. This is often described as "brain fog."
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-purple-200 pl-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Sleep Disturbances</h4>
+                      <p className="text-slate-600 text-sm">
+                        Anxiety can lead to insomnia or restless sleep. Many individuals experience trouble falling asleep, staying asleep, or waking up feeling unrefreshed.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Identification Section */}
+            <section id="identification">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 bg-emerald-500 rounded-xl flex items-center justify-center">
+                  <Shield className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-2xl font-bold text-slate-800">Identifying Anxiety in Yourself and Others</h2>
+              </div>
+              
+              <p className="text-slate-700 leading-relaxed mb-8 text-lg">
+                Recognizing anxiety is the first step toward addressing it. Here are key signs to look for in yourself and others.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* In Yourself */}
+                <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl p-8 border border-emerald-100">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
+                      <User className="w-5 h-5 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-800">In Yourself</h3>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-white/70 rounded-lg p-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Constant Worrying</h4>
+                      <p className="text-slate-600 text-sm">
+                        If you find yourself worrying excessively about everyday situations, it might be a sign of anxiety. This can include concerns about health, work, social interactions, and more.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-white/70 rounded-lg p-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Avoidance Behavior</h4>
+                      <p className="text-slate-600 text-sm">
+                        Avoiding social situations or tasks that provoke anxiety is a common coping mechanism. This can lead to significant lifestyle changes and limitations.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-white/70 rounded-lg p-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Physical Symptoms</h4>
+                      <p className="text-slate-600 text-sm">
+                        Regularly experiencing headaches, stomach aches, or muscle tension without a clear medical cause can be indicative of anxiety.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-white/70 rounded-lg p-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Sleep Pattern Changes</h4>
+                      <p className="text-slate-600 text-sm">
+                        Difficulty falling or staying asleep, or waking up feeling unrefreshed, are common signs of anxiety-related sleep disturbances.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* In Others */}
+                <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-2xl p-8 border border-blue-100">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                      <MessageCircle className="w-5 h-5 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-800">In Others</h3>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-white/70 rounded-lg p-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Behavioral Changes</h4>
+                      <p className="text-slate-600 text-sm">
+                        Noticing someone avoiding activities they previously enjoyed or exhibiting uncharacteristic behaviors can be a sign of anxiety.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-white/70 rounded-lg p-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Emotional Outbursts</h4>
+                      <p className="text-slate-600 text-sm">
+                        Increased irritability or unexpected emotional reactions, such as crying or anger, can indicate underlying anxiety.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-white/70 rounded-lg p-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Physical Complaints</h4>
+                      <p className="text-slate-600 text-sm">
+                        Frequent complaints about physical ailments like stomach aches or headaches, particularly when no medical cause is found, can be a sign of anxiety.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-white/70 rounded-lg p-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Social Withdrawal</h4>
+                      <p className="text-slate-600 text-sm">
+                        Reduced interaction with friends, family, or colleagues may suggest that someone is struggling with anxiety.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-white/70 rounded-lg p-4">
+                      <h4 className="font-semibold text-slate-800 mb-2">Restlessness or Fidgeting</h4>
+                      <p className="text-slate-600 text-sm">
+                        Constantly moving, fidgeting, or showing signs of agitation can be physical manifestations of anxiety.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Treatment Methods */}
+            <section id="treatment">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 bg-purple-500 rounded-xl flex items-center justify-center">
+                  <Heart className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-2xl font-bold text-slate-800">Scientifically Proven Methods to Alleviate Anxiety</h2>
+              </div>
+              
+              <p className="text-slate-700 leading-relaxed mb-8 text-lg">
+                Several research-backed strategies can help manage and reduce anxiety. These methods can be used alone or in combination, depending on individual needs and preferences.
+              </p>
+
+              <div className="grid gap-6">
+                {/* CBT */}
+                <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8 hover:shadow-xl transition-shadow duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Brain className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-slate-800 mb-3">Cognitive Behavioral Therapy (CBT)</h3>
+                      <div className="space-y-3">
+                        <div className="bg-blue-50 rounded-lg p-4">
+                          <h4 className="font-semibold text-slate-800 mb-2">What It Is:</h4>
+                          <p className="text-slate-600 text-sm">
+                            A structured, time-limited therapy that focuses on identifying and changing negative thought patterns and behaviors. CBT helps individuals challenge and modify distorted cognitions and beliefs, leading to behavioral changes and reduced anxiety symptoms.
+                          </p>
+                        </div>
+                        <div className="bg-green-50 rounded-lg p-4">
+                          <h4 className="font-semibold text-slate-800 mb-2">Evidence:</h4>
+                          <p className="text-slate-600 text-sm">
+                            Numerous studies have demonstrated CBT's effectiveness in reducing symptoms of anxiety disorders, including generalized anxiety disorder (GAD) and panic disorder. Meta-analyses confirm that CBT is one of the most effective treatments for anxiety.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mindfulness */}
+                <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8 hover:shadow-xl transition-shadow duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Target className="w-6 h-6 text-purple-600" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-slate-800 mb-3">Mindfulness and Meditation</h3>
+                      <div className="space-y-3">
+                        <div className="bg-purple-50 rounded-lg p-4">
+                          <h4 className="font-semibold text-slate-800 mb-2">What It Is:</h4>
+                          <p className="text-slate-600 text-sm">
+                            Practices that involve focusing on the present moment and accepting it without judgment. Techniques such as mindfulness-based stress reduction (MBSR) and mindfulness-based cognitive therapy (MBCT) are commonly used.
+                          </p>
+                        </div>
+                        <div className="bg-green-50 rounded-lg p-4">
+                          <h4 className="font-semibold text-slate-800 mb-2">Evidence:</h4>
+                          <p className="text-slate-600 text-sm">
+                            Research indicates that mindfulness-based interventions can significantly reduce anxiety and improve overall mental health. Studies show that these practices can reduce the activation of the body's stress response and enhance emotional regulation.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Physical Activity */}
+                <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8 hover:shadow-xl transition-shadow duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Heart className="w-6 h-6 text-emerald-600" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-slate-800 mb-3">Physical Activity</h3>
+                      <div className="space-y-3">
+                        <div className="bg-emerald-50 rounded-lg p-4">
+                          <h4 className="font-semibold text-slate-800 mb-2">What It Is:</h4>
+                          <p className="text-slate-600 text-sm">
+                            Regular exercise, such as walking, running, or yoga. Physical activity promotes the release of endorphins, which are natural mood lifters.
+                          </p>
+                        </div>
+                        <div className="bg-green-50 rounded-lg p-4">
+                          <h4 className="font-semibold text-slate-800 mb-2">Evidence:</h4>
+                          <p className="text-slate-600 text-sm">
+                            Exercise has been shown to reduce anxiety by improving mood, increasing energy levels, and enhancing sleep quality. It also provides a healthy distraction from negative thoughts and worries.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Additional Methods Grid */}
+                <div className="grid md:grid-cols-2 gap-6">
+                  {/* Medication */}
+                  <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
+                        <Shield className="w-5 h-5 text-red-600" />
+                      </div>
+                      <h3 className="text-lg font-bold text-slate-800">Medication</h3>
+                    </div>
+                    <p className="text-slate-600 text-sm mb-3">
+                      Medications such as SSRIs and benzodiazepines can be prescribed to manage anxiety symptoms when combined with therapy.
+                    </p>
+                    <div className="bg-red-50 rounded-lg p-3">
+                      <p className="text-slate-600 text-xs">
+                        <strong>Evidence:</strong> Studies show effectiveness when combined with therapy. Consult healthcare professionals for proper guidance.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Lifestyle */}
+                  <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center">
+                        <Lightbulb className="w-5 h-5 text-orange-600" />
+                      </div>
+                      <h3 className="text-lg font-bold text-slate-800">Healthy Lifestyle</h3>
+                    </div>
+                    <p className="text-slate-600 text-sm mb-3">
+                      Maintaining a balanced diet, adequate sleep, and avoiding alcohol, caffeine, and nicotine can significantly influence anxiety levels.
+                    </p>
+                    <div className="bg-orange-50 rounded-lg p-3">
+                      <p className="text-slate-600 text-xs">
+                        <strong>Evidence:</strong> Healthy diet and sleep are essential for emotional regulation and cognitive function.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Support Networks */}
+                  <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-sky-100 rounded-lg flex items-center justify-center">
+                        <MessageCircle className="w-5 h-5 text-sky-600" />
+                      </div>
+                      <h3 className="text-lg font-bold text-slate-800">Support Networks</h3>
+                    </div>
+                    <p className="text-slate-600 text-sm mb-3">
+                      Engaging with friends, family, or support groups provides emotional support and a sense of belonging crucial for mental health.
+                    </p>
+                    <div className="bg-sky-50 rounded-lg p-3">
+                      <p className="text-slate-600 text-xs">
+                        <strong>Evidence:</strong> Strong social networks improve ability to cope with stress and anxiety.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Relaxation */}
+                  <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center">
+                        <Target className="w-5 h-5 text-indigo-600" />
+                      </div>
+                      <h3 className="text-lg font-bold text-slate-800">Relaxation Techniques</h3>
+                    </div>
+                    <p className="text-slate-600 text-sm mb-3">
+                      Practices such as deep breathing, progressive muscle relaxation, and visualization help calm the nervous system.
+                    </p>
+                    <div className="bg-indigo-50 rounded-lg p-3">
+                      <p className="text-slate-600 text-xs">
+                        <strong>Evidence:</strong> Deep breathing exercises can lower heart rate and blood pressure, promoting calm.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Conclusion */}
+            <section id="conclusion" className="bg-gradient-to-br from-slate-50 to-gray-50 rounded-2xl p-8 border border-slate-200">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-slate-600 rounded-xl flex items-center justify-center">
+                  <BookOpen className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-2xl font-bold text-slate-800">Conclusion</h2>
+              </div>
+              <div className="prose prose-lg max-w-none">
+                <p className="text-slate-700 leading-relaxed text-lg">
+                  Anxiety is a common but manageable condition. By understanding its effects, recognizing its signs, and employing scientifically proven methods, individuals can effectively manage anxiety and improve their quality of life.
+                </p>
+                <p className="text-slate-700 leading-relaxed">
+                  Whether for oneself or for supporting others, knowledge and proactive management are key to overcoming the challenges posed by anxiety. Remember that seeking professional help is always a valid and important step in your mental health journey.
+                </p>
+              </div>
+              
+              {/* Key Takeaways */}
+              <div className="mt-8 bg-white rounded-xl p-6 border border-slate-200">
+                <h3 className="font-bold text-slate-800 mb-4 flex items-center gap-2">
+                  <Lightbulb className="w-5 h-5 text-yellow-600" />
+                  Key Takeaways
+                </h3>
+                <ul className="space-y-2 text-slate-700">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-sky-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Anxiety affects both physical and mental health in various ways</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-sky-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Early recognition is crucial for effective treatment</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-sky-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Multiple evidence-based treatment options are available</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-sky-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Professional help should be sought when needed</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            {/* References */}
+            <section className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-8 h-8 bg-slate-100 rounded-lg flex items-center justify-center">
+                  <Quote className="w-5 h-5 text-slate-600" />
+                </div>
+                <h2 className="text-xl font-bold text-slate-800">References</h2>
+              </div>
+              <div className="space-y-3 text-sm text-slate-600">
+                <div className="border-l-4 border-slate-200 pl-4">
+                  <p>1. Hofmann, S. G., Asnaani, A., Vonk, I. J., Sawyer, A. T., & Fang, A. (2012). The Efficacy of Cognitive Behavioral Therapy: A Review of Meta-analyses. <em>Cognitive Therapy and Research</em>, 36(5), 427-440.</p>
+                </div>
+                <div className="border-l-4 border-slate-200 pl-4">
+                  <p>2. Cuijpers, P., Berking, M., Andersson, G., Quigley, L., Kleiboer, A., & Dobson, K. S. (2013). A Meta-analysis of Cognitive-behavioral Therapy for Adult Depression, Alone and in Comparison with Other Treatments. <em>The Canadian Journal of Psychiatry</em>, 58(7), 376-385.</p>
+                </div>
+                <div className="border-l-4 border-slate-200 pl-4">
+                  <p>3. Khoury, B., Lecomte, T., Fortin, G., Masse, M., Therien, P., Bouchard, V., ... & Hofmann, S. G. (2013). Mindfulness-based Therapy: A Comprehensive Meta-analysis. <em>Clinical Psychology Review</em>, 33(6), 763-771.</p>
+                </div>
+                <div className="border-l-4 border-slate-200 pl-4">
+                  <p>4. Goyal, M., Singh, S., Sibinga, E. M., Gould, N. F., Rowland-Seymour, A., Sharma, R., ... & Haythornthwaite, J. A. (2014). Meditation Programs for Psychological Stress and Well-being: A Systematic Review and Meta-analysis. <em>JAMA Internal Medicine</em>, 174(3), 357-368.</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Tags */}
+            <section className="flex flex-wrap gap-3">
+              {articleData.tags.map((tag) => (
+                <span key={tag} className="inline-flex items-center gap-1 bg-sky-100 text-sky-700 px-3 py-2 rounded-full text-sm font-medium">
+                  <Tag className="w-4 h-4" />
+                  {tag}
+                </span>
+              ))}
+            </section>
+          </article>
+        </div>
+
+        {/* Article Navigation */}
+        <section className="max-w-4xl mx-auto mt-16">
+          <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8">
+            <div className="flex items-center justify-between">
+              <div className="text-center">
+                <p className="text-slate-500 text-sm mb-2">Previous Article</p>
+                <Link 
+                  href="/blog"
+                  className="group flex items-center gap-2 text-slate-600 hover:text-sky-600 transition-colors"
+                >
+                  <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-300" />
+                  <span className="font-medium">Back to Blog</span>
+                </Link>
+              </div>
+              
+              <div className="text-center">
+                <p className="text-slate-500 text-sm mb-2">Next Article</p>
+                <Link 
+                  href="/blog/treating-lower-back-pain"
+                  className="group flex items-center gap-2 text-slate-600 hover:text-sky-600 transition-colors"
+                >
+                  <span className="font-medium">Treating Lower Back Pain</span>
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Articles */}
+        <section className="max-w-4xl mx-auto mt-16">
+          <h2 className="text-2xl font-bold text-slate-800 mb-8 text-center">Related Articles</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Link href="/blog/coping-stress-anxiety" className="group bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-300">
+              <div className="p-6">
+                <div className="flex items-center gap-2 text-sky-600 text-sm font-medium mb-3">
+                  <Brain className="w-4 h-4" />
+                  Mental Health
+                </div>
+                <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-sky-600 transition-colors">
+                  Coping with Stress and Anxiety
+                </h3>
+                <p className="text-slate-600 text-sm">
+                  Practical strategies for managing daily stress and anxiety with actionable advice.
+                </p>
+              </div>
+            </Link>
+            
+            <Link href="/blog/enhancing-sleep-quality" className="group bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-300">
+              <div className="p-6">
+                <div className="flex items-center gap-2 text-emerald-600 text-sm font-medium mb-3">
+                  <Heart className="w-4 h-4" />
+                  Wellness
+                </div>
+                <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-sky-600 transition-colors">
+                  Enhancing Sleep Quality
+                </h3>
+                <p className="text-slate-600 text-sm">
+                  Evidence-based techniques to improve your sleep quality and achieve better rest.
+                </p>
+              </div>
+            </Link>
+          </div>
+        </section>
+      </main>
+
+      {/* Back to Top Button */}
+      {showBackToTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 w-12 h-12 bg-sky-500 text-white rounded-full shadow-lg hover:bg-sky-600 transition-all duration-300 hover:scale-110 z-40"
+        >
+          <ChevronUp className="w-6 h-6 mx-auto" />
+        </button>
+      )}
+    </div>
+  )
+}
