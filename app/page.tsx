@@ -140,7 +140,7 @@ export default function HomePage() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-sky-500/20 to-blue-500/20 rounded-2xl blur-2xl"></div>
                 <div className="relative bg-white p-2 rounded-2xl shadow-2xl">
                   <Image
-                    src="/images/image1.jpg"
+                    src="/images/image.jpeg?v=2"
                     alt="Healthcare professional consultation"
                     width={600}
                     height={500}
@@ -297,7 +297,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-sky-500/10 to-blue-500/10 rounded-2xl"></div>
               <Image
-                src="/images/ime.jpeg"
+                src="/images/ime.jpeg?v=2"
                 alt="Healthcare consultation process"
                 width={600}
                 height={500}
