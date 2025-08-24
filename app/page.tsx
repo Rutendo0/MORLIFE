@@ -517,7 +517,7 @@ export default function HomePage() {
           
           <div className="border-t border-slate-700 pt-6 text-center">
             <p className="text-slate-400 text-sm">
-              © 2024 MORLIFE Medical Services. Designed by <a href="https://www.niakazi.com/" target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:text-sky-300 transition-colors font-medium">Niakazi Technology and Solutions</a>
+              © 2024 Molife. Designed by <a href="https://www.niakazi.com/" target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:text-sky-300 transition-colors font-medium">Niakazi Technology and Solutions</a>
             </p>
           </div>
         </div>
