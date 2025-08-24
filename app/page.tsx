@@ -297,7 +297,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-sky-500/10 to-blue-500/10 rounded-2xl"></div>
               <Image
-                src="/images/image2.jpeg"
+                src="/images/ime.jpeg"
                 alt="Healthcare consultation process"
                 width={600}
                 height={500}
@@ -391,7 +391,7 @@ export default function HomePage() {
             <div className="order-2 lg:order-1 relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-sky-500/10 to-blue-500/10 rounded-2xl"></div>
               <Image
-                src="/images/image3.jpeg"
+                src="/images/image.jpeg"
                 alt="Medical equipment and supplies"
                 width={600}
                 height={500}
